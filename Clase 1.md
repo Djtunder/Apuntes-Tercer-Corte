@@ -23,7 +23,9 @@ ejercicios, graficas y comportamientos segun el sistema lo reqiuiera.
 ### 3.1 Clasificacion de las Funciones de Transferencia
 
 3.11 Función impropia: Cunado el grado del Denominador es mas grande que el denominador.
+
 3.12 Funcion Bipropia: Cuando el grado del Numerador y El Denominador es igual.
+
 3.13 Funcion estrictamente propia: Cunado el grado del Numerador es mas grande que el Denominador.
 
 ## 4. Ejemplo
