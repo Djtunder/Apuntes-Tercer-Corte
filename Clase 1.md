@@ -19,7 +19,7 @@ ejercicios, graficas y comportamientos segun el sistema lo reqiuiera.
 
  En el área de control se usa otro tipo de representación matemática denominada función de transferencia
  • Consiste en la transformada de Laplace de la ecuación diferencial
- C
+ 
 ### 3.1 Clasificacion de las Funciones de Transferencia
 
 3.11 Función impropia: Cunado el grado del Denominador es mas grande que el denominador.
@@ -28,4 +28,8 @@ ejercicios, graficas y comportamientos segun el sistema lo reqiuiera.
 
 3.13 Funcion estrictamente propia: Cunado el grado del Numerador es mas grande que el Denominador.
 
-## 4. Ejemplo
+## 4. Ejemplos
+Clasificar las siguientes funciones segun el orden
+
+
+
