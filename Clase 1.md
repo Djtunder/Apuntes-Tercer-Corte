@@ -12,3 +12,7 @@ ejercicios, graficas y comportamientos segun el sistema lo reqiuiera.
 
 # Definición
 🔑 Función de Transferencia: La función de transferencia también puede considerarse como la respuesta de un sistema inicialmente inerte a un impulso como señal de entrada: y la respuesta como función del tiempo se halla con la transformada de Laplace inversa de Y(s): Cualquier sistema físico (mecánico, eléctrico, etc.)
+
+<align img ="center">
+< img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/e75a5fb923dd89fb523c3e875b5307957f578b32/Build/Funcion%20de%20Transferencia.png" width="300">
+<
