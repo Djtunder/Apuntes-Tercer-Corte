@@ -10,4 +10,5 @@ en el dominio de Laplace. Esta función permite analizar cómo un sistema respon
 La función de Transferencia es una herramienta que nos permite modelar un movimiento dinamico que permite mirar si esta en el dominio del tiempo, vamos a ver los tres tipos de casos,
 ejercicios, graficas y comportamientos segun el sistema lo reqiuiera.
 
-# 
+# Definición
+🔑 Función de Transferencia: La función de transferencia también puede considerarse como la respuesta de un sistema inicialmente inerte a un impulso como señal de entrada: y la respuesta como función del tiempo se halla con la transformada de Laplace inversa de Y(s): Cualquier sistema físico (mecánico, eléctrico, etc.)
