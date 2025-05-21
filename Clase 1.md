@@ -31,5 +31,44 @@ ejercicios, graficas y comportamientos segun el sistema lo reqiuiera.
 ## 4. Ejemplos
 Clasificar las siguientes funciones segun el orden
 
+$$s^2 + 1 \hspace{2cm} \textit{impropia}$$
+
+$$2 \hspace{3.6cm} \textit{bipropia}$$
+
+$$\frac{1}{s + 1} \hspace{2cm} \textit{Estrictamente propia}$$
+
+$$\frac{s^2 - 1}{s + 1} \hspace{1.2cm} \textit{impropia}$$
+
+$$\frac{s - 1}{s + 1} \hspace{1.6cm} \textit{bipropia}$$
+
+# 4.1 Zeros de una Funcion de Transferencia
+Son los valores de S que todos los valores de transferencia obtienen los valores de "S" que cumplen la condicion.
+
+
+$$\[G(s) = \frac{s^2 + 4s + 1}{s^4 + 3s^3 + 5s^2 + 3s + 2}\]$$
+
+## 📌 Objetivo
+
+- Calcular los **ceros** (raíces del numerador).
+- Calcular los **polos** (raíces del denominador).
+- Visualizar el plano de polos y ceros con `pzmap`.
+
+## 🧠 Análisis simbólico
+
+### Ceros:
+Resolvemos:
+
+$$\[s^2 + 4s + 1 = 0\]$$
+$$\Rightarrow s = -2 \pm \sqrt{3}\]$$
+
+### Polos:
+Factorización del denominador:
+
+$$\[s^4 + 3s^3 + 5s^2 + 3s + 2 = (s^2 + s + 1)(s^2 + 2s + 2)\]$$
+
+$$\[\text{Raíces: } \quad s = \frac{-1 \pm j\sqrt{3}}{2}, \quad s = -1 \pm j\]$$
+
+
+
 
 
