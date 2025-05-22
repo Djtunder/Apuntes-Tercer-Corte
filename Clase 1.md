@@ -108,14 +108,14 @@ $$[s = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\]$$
 
 Donde:
 
-$$[\a = 1, \quad b = 3, \quad c = 2\$$
 
-$$[\s = \frac{-3 \pm \sqrt{9 - 8}}{2} = \frac{-3 \pm \sqrt{1}}{2}\$$
+$$\[a = 1, \quad b = 3, \quad c = 2\]$$
 
-$$[\s = \frac{-3 \pm 1}{2}\]$$
+$$\[s = \frac{-3 \pm \sqrt{9 - 8}}{2} = \frac{-3 \pm \sqrt{1}}{2}\]$$
 
-$$[\s_1 = -1, \quad s_2 = -\]$$
+$$\[s = \frac{-3 \pm 1}{2}\]$$
 
+$$\[s_1 = -1, \quad s_2 = -\]$$
 ### Otro ejemplo con raíz cuadrada:
 
 $$\[s = \frac{-3 \pm \sqrt{(3)^2 - 4(1)(2)}}{2}\]$$
@@ -139,6 +139,11 @@ Se dibujan los polos y ceros en el plano con ejes reales e imaginarios:
 - Ceros en: \( s = -2 \pm \sqrt{3} \)
 
 (Dibujo de plano cartesiano con marcas en los valores correspondientes).
+
+<div align="center">
+<img src=">
+</div>
+
 
 
 
