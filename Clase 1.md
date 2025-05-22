@@ -90,7 +90,7 @@ $$\[G(s) = \frac{Y(s)}{U(s)} = \frac{s^2 + 4s + 1}{s^4 + 3s^3 + 3s^2 + s + 2}\]$
 
 El denominador:
 
-$$\[s^4 + 3s^3 + 3s^2 + s + 2\]$$
+$$\s^4 + 3s^3 + 3s^2 + s + 2\]$$
 
 Factorizamos o aplicamos algún método de raíces:
 
@@ -100,36 +100,36 @@ $$\[(s+1)(s+2) = s^2 + 3s + 2\]$$
 
 Entonces:
 
-\[s^2 + 3s + 2 = 0\]
+$$\s^2 + 3s + 2 = 0\]$$
 
 Aplicamos la fórmula general:
 
-\[s = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\]
+$$\s = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\]$$
 
 Donde:
 
-\[a = 1, \quad b = 3, \quad c = 2\]
+$$\a = 1, \quad b = 3, \quad c = 2\]$$
 
-\[s = \frac{-3 \pm \sqrt{9 - 8}}{2} = \frac{-3 \pm \sqrt{1}}{2}\]
+$$\s = \frac{-3 \pm \sqrt{9 - 8}}{2} = \frac{-3 \pm \sqrt{1}}{2}\]$$
 
-\[s = \frac{-3 \pm 1}{2}\]
+$$s = \frac{-3 \pm 1}{2}\]$$
 
-\[s_1 = -1, \quad s_2 = -\]
+$$s_1 = -1, \quad s_2 = -\]$$
 
 ---
 
 ### Otro ejemplo con raíz cuadrada:
 
-\[s = -3 + \sqrt{(3)^2 - 4(1)(2)}\]
+$$s = -3 + \sqrt{(3)^2 - 4(1)(2)}\]$$
 
-\[s = \frac{-3 \pm \sqrt{9 - 8}}{2} = \frac{-3 \pm 1}{2}\]
+$$s = \frac{-3 \pm \sqrt{9 - 8}}{2} = \frac{-3 \pm 1}{2}\]$$
 
 
 ### Resultado:
 
 Polos en:
 
-\[s = -1, \quad s = -2\]
+$$s = -1, \quad s = -2\]$$
 
 
 ### Representación gráfica en el plano complejo
