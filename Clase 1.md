@@ -2,7 +2,7 @@
 # Curso: M6A
 # Dinamica de Sistemas
 
-## 1. Función de Transferencia
+## 1. Introducción
 En la dinámica de sistemas, la función de transferencia es una herramienta matemática fundamental que describe el comportamiento de un sistema lineal e invariante en el tiempo (LTI)
 en el dominio de Laplace. Esta función permite analizar cómo un sistema responde a una entrada dada, sin tener que resolver directamente las ecuaciones diferenciales que lo gobiernan.
 
@@ -80,8 +80,66 @@ $$\( s_2 = -2 - \sqrt{3} \)$$
 
 ### Nota:
 
-$$\[text{Los ceros siempre van a dar un número real.}$$
+$${Los ceros siempre van a dar un número real.}$$
 
+### Análisis de los polos — cuando el denominador se hace cero
+
+$$\[G(s) = \frac{Y(s)}{U(s)} = \frac{s^2 + 4s + 1}{s^4 + 3s^3 + 3s^2 + s + 2}\]$$
+
+### Paso: Hallar los polos
+
+El denominador:
+
+$$\[s^4 + 3s^3 + 3s^2 + s + 2\]$$
+
+Factorizamos o aplicamos algún método de raíces:
+
+Suponiendo que se prueba con:
+
+$$\[(s+1)(s+2) = s^2 + 3s + 2\]$$
+
+Entonces:
+
+\[s^2 + 3s + 2 = 0\]
+
+Aplicamos la fórmula general:
+
+\[s = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\]
+
+Donde:
+
+\[a = 1, \quad b = 3, \quad c = 2\]
+
+\[s = \frac{-3 \pm \sqrt{9 - 8}}{2} = \frac{-3 \pm \sqrt{1}}{2}\]
+
+\[s = \frac{-3 \pm 1}{2}\]
+
+\[s_1 = -1, \quad s_2 = -\]
+
+---
+
+### Otro ejemplo con raíz cuadrada:
+
+\[s = -3 + \sqrt{(3)^2 - 4(1)(2)}\]
+
+\[s = \frac{-3 \pm \sqrt{9 - 8}}{2} = \frac{-3 \pm 1}{2}\]
+
+
+### Resultado:
+
+Polos en:
+
+\[s = -1, \quad s = -2\]
+
+
+### Representación gráfica en el plano complejo
+
+Se dibujan los polos y ceros en el plano con ejes reales e imaginarios:
+
+- Polos en: \( s = -1 \), \( s = -2 \)
+- Ceros en: \( s = -2 \pm \sqrt{3} \)
+
+(Dibujo de plano cartesiano con marcas en los valores correspondientes).
 
 
 
