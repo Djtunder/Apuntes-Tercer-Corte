@@ -141,7 +141,7 @@ Se dibujan los polos y ceros en el plano con ejes reales e imaginarios:
 (Dibujo de plano cartesiano con marcas en los valores correspondientes).
 
 <div align="center">
-<img src=">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/f74095e5992c02b969b6be09056f1e95572bf907/Build/grafica%20de%20matlab.png" width="300">
 </div>
 
 
