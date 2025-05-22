@@ -45,20 +45,43 @@ $$\frac{s - 1}{s + 1} \hspace{1.6cm} \textit{bipropia}$$
 Son los valores de S que todos los valores de transferencia obtienen los valores de "S" que cumplen la condicion.
 
 
-$$\[G(s) = \frac{s^2 + 4s + 1}{s^4 + 3s^3 + 5s^2 + 3s + 2}\]$$
+# Ejemplo
 
-### Ceros:
-Resolvemos:
+### Hallar los ceros de una función de transferencia
 
-$$\[s^2 + 4s + 1 = 0\]$$
-$$\Rightarrow s = -2 \pm \sqrt{3}\]$$
+$$\frac{s^2 + 4s + 1}{s^4 + 3s^3 + 3s^2 + s + 2}$$
 
-### Polos:
-Factorización del denominador:
-
-$$\[s^4 + 3s^3 + 5s^2 + 3s + 2 = (s^2 + s + 1)(s^2 + 2s + 2)\]$$
+### Paso 1: Igualar el numerador a cero
 
 $$s^2 + 4s + 1 = 0$$
+
+Aplicamos la fórmula general:
+
+$$s = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+
+Donde:
+
+Sustituyendo:
+
+$$s = \frac{-4 \pm \sqrt{(4)^2 - 4(1)(1)}}{2(1)} = \frac{-4 \pm \sqrt{16 - 4}}{2}\]$$
+
+$$s = \frac{-4 \pm \sqrt{12}}{2} = \frac{-4 \pm 2\sqrt{3}}{2}$$
+
+$$s = -2 \pm \sqrt{3}\]$$
+
+
+### Representación en el plano complejo
+
+Se ubican los ceros en el eje real, ya que no tienen parte imaginaria:
+
+$$ \( s_1 = -2 + \sqrt{3} \)$$
+$$\( s_2 = -2 - \sqrt{3} \)$$
+
+
+### Nota:
+
+$$\[text{Los ceros siempre van a dar un número real.}$$
+
 
 
 
