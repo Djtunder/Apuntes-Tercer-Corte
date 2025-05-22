@@ -47,14 +47,6 @@ Son los valores de S que todos los valores de transferencia obtienen los valores
 
 $$\[G(s) = \frac{s^2 + 4s + 1}{s^4 + 3s^3 + 5s^2 + 3s + 2}\]$$
 
-## 📌 Objetivo
-
-- Calcular los **ceros** (raíces del numerador).
-- Calcular los **polos** (raíces del denominador).
-- Visualizar el plano de polos y ceros con `pzmap`.
-
-## 🧠 Análisis simbólico
-
 ### Ceros:
 Resolvemos:
 
@@ -66,7 +58,10 @@ Factorización del denominador:
 
 $$\[s^4 + 3s^3 + 5s^2 + 3s + 2 = (s^2 + s + 1)(s^2 + 2s + 2)\]$$
 
-$$\[\text{Raíces: } \quad s = \frac{-1 \pm j\sqrt{3}}{2}, \quad s = -1 \pm j\]$$
+$$s^2 + 4s + 1 = 0$$
+
+
+
 
 
 
