@@ -144,9 +144,25 @@ Se dibujan los polos y ceros en el plano con ejes reales e imaginarios:
 <img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/f74095e5992c02b969b6be09056f1e95572bf907/Build/grafica%20de%20matlab.png" width="300">
 </div>
 
+## 4.2 Polos de una funcion de trasnferencia 
 
+• Si se iguala D(s) a 0 se obtienen los valores de “s” que cumplen con la condición
 
+• Si el denominador se hace 0 toda la función de transferencia se vuelve infinito de ahí el nombre para
+  estos valores de “s”
+  
+• Estos valores pueden ser reales o complejos por lo tanto se pueden ubicar en un plano cartesiano
 
+Ejemplo
+Hallar la funcion de trasnferencia de la siguiente funcion. 
+
+$$G(s) = \frac{Y(s)}{U(s)} = \frac{3s - 1}{s^2 + 3s + 2} = \frac{N(s)}{D(s)}$$
+
+$$D(s) = s^2 + 3s + 2 = (s + 1)(s + 2)$$
+
+$$\text{Polos: } s = -1, \quad s = -2$$
+
+## 5. Ubicacion grafica de polos
 
 
 
