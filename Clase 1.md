@@ -164,6 +164,16 @@ $$\text{Polos: } s = -1, \quad s = -2$$
 
 ## 5. Ubicacion grafica de polos
 
+<div align="center">
+<img src= "https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/9783cc3e060592a3bf6fd53879ac5e7ef574a4dd/Build/grafica%20de%20polos.png" widht=300">
+</div>
+
+## Grafica de Polos y ceros
+
+<div align="center">
+<img src= "https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/9783cc3e060592a3bf6fd53879ac5e7ef574a4dd/Build/grafica%20de%20polos.png" widht=300">
+</div>
+
 
 
 
