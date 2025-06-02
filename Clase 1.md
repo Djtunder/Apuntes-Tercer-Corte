@@ -168,13 +168,90 @@ $$\text{Polos: } s = -1, \quad s = -2$$
 <img src= "https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/9783cc3e060592a3bf6fd53879ac5e7ef574a4dd/Build/grafica%20de%20polos.png" widht=300">
 </div>
 
-## Grafica de Polos y ceros
+## 5.1 Grafica de Polos y zeros de la funcion de Transferencia
 
 <div align="center">
-<img src= "https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/9783cc3e060592a3bf6fd53879ac5e7ef574a4dd/Build/grafica%20de%20polos.png" widht=300">
+<img src= "https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/493cc6be7d2dd5c7c1efb7404a4afaf6af327c1a/Build/Grafica%20de%20polos%20y%20zeros%20de%20una%20funcion%20de%20transferencia%20.png" widht=300">
 </div>
 
+## Grado de la funcion de Transferencia
 
+ • Otra forma de clasificar las funciones de transferencia es  por su orden o grado
+ 
+ • Esto lo define el polinomio característisco
+ 
+ • Por ejemplo
 
+La función de transferencia está dada por:
+
+$$
+G(s) = \frac{3s - 1}{s^2 + 3s + 2}
+$$
+
+Donde el **polinomio característico** de segundo orden es:
+
+$$
+D(s) = s^2 + 3s + 2
+$$
+
+La funcion de Transferencia es de segundo orden, debido a que es de grado 2.
+
+## 5.2 Teorema del valor final
+
+El error en estado estacionario corresponde al error 
+medido en 𝑡 =∞
+
+ • Es posible aprovechar el teorema del valor final para 
+saber el valor final del error
+
+$$\lim_{t \to \infty} f(t) = \lim_{s \to 0} sF(s)$$
+
+### Función de Transferencia y Respuesta a Escalón
+
+La función de transferencia del sistema es:
+
+$$
+G(s) = \frac{Y(s)}{U(s)} = \frac{4}{5s + 1}
+$$
+
+Multiplicando por \( U(s) \):
+
+$$
+Y(s) = \frac{4}{5s + 1} \cdot U(s)
+$$
+
+---
+
+#### Entrada: Escalón Unitario
+
+Un escalón unitario tiene transformada de Laplace:
+
+$$
+U(s) = \frac{1}{s}
+$$
+
+Entonces la salida será:
+
+$$
+Y(s) = \frac{4}{s(5s + 1)}
+$$
+
+### Teorema del Valor Final
+
+El valor final de \( Y(s) \) se puede calcular aplicando el **teorema del valor final**:
+
+$$\lim_{t \to \infty} y(t) = \lim_{s \to 0} sY(s)$$
+
+Dado que:
+
+$$Y(s) = \frac{4}{s(5s + 1)}$$
+
+Entonces:
+
+$$\lim_{s \to 0} sY(s) = \lim_{s \to 0} s \cdot \frac{4}{s(5s + 1)} = \lim_{s \to 0} \frac{4}{5s + 1}$$
+
+Y finalmente:
+
+$$\lim_{s \to 0} \frac{4}{5s + 1} = \frac{4}{1} = 4$$
 
 
