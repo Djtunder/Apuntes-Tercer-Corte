@@ -1,7 +1,7 @@
 # Nombre: Kevin Nicolas Perez Tobar
 # Curso: M6A
 # Dinamica de Sistemas
-
+ 
 ## 1. Introducción
 En la dinámica de sistemas, la función de transferencia es una herramienta matemática fundamental que describe el comportamiento de un sistema lineal e invariante en el tiempo (LTI)
 en el dominio de Laplace. Esta función permite analizar cómo un sistema responde a una entrada dada, sin tener que resolver directamente las ecuaciones diferenciales que lo gobiernan.
