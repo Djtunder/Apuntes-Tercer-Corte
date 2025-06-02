@@ -262,16 +262,16 @@ $$\lim_{s \to 0} \frac{4}{5s + 1} = \frac{4}{1} = 4$$
 |----------------------------------------|--------------------------------------------------------------------|---------------------------------------------------------------------|----------------------------------------|
 | Primer Orden                           | $$( \frac{K}{\tau s + 1} \)$$                                         | $$( \tau \frac{dy(t)}{dt} + y(t) = K u(t) \)$$                         | Exponencial decreciente                |
 | Primer Orden con Polo en el Origen     | $$( \frac{K}{s(\tau s + 1)} \)$$                                     | $$( \tau \frac{d^2y(t)}{dt^2} + \frac{dy(t)}{dt} = K u(t) \)$$        | Rampa + estabilización                 |
-| Segundo Orden Subamortiguado           | $$( \frac{\omega_n^2}{s^2 + 2\zeta\omega_n s + \omega_n^2} \)$$       | $$( \frac{d^2y(t)}{dt^2} + 2\zeta\omega_n \frac{dy(t)}{dt} +\omega_n^2 y(t) = \omega_n^2 u(t) \) | Oscilatoria amortiguada                |
+| Segundo Orden Subamortiguado           | $$( \frac{\omega_n^2}{s^2 + 2\zeta\omega_n s + \omega_n^2} \)$$       | $$( \frac{d^2y(t)}{dt^2} + 2\zeta\omega_n \frac{dy(t)}{dt} +\omega_n^2 y(t) = \omega_n^2 u(t) \)$$ | Oscilatoria amortiguada                |
 | Segundo Orden Críticamente Amortiguado | $$( \frac{\omega_n^2}{s^2 + 2\omega_n s + \omega_n^2} \)$$           | Igual que arriba con \( \zeta = 1 \)                                | Más rápida sin oscilación              |
 | Segundo Orden Sobreamortiguado         | $$( \frac{\omega_n^2}{s^2 + 2\zeta\omega_n s + \omega_n^2} \)$$      | Igual que arriba con \( \zeta > 1 \)                                | Dos exponentes reales negativos        |
 | Segundo Orden No Amortiguado           | $$( \frac{\omega_n^2}{s^2 + \omega_n^2} \)$$                          | $$( \frac{d^2y(t)}{dt^2} + \omega_n^2 y(t) = \omega_n^2 u(t) \)$$    | Oscilación sostenida                   |
 
 ## 8. Ejercicios 
 
-## Función de Transferencia
-
- Ejercicio 8.1 La función de transferencia está dada por:
+## Ejercicio 8.1
+ 
+La función de transferencia está dada por:
 
 $$G(s) = \frac{s + 3}{s^3 + 11s^2 + 12s + 18}$$
 ---
