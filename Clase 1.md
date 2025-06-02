@@ -268,6 +268,7 @@ $$\lim_{s \to 0} \frac{4}{5s + 1} = \frac{4}{1} = 4$$
 | Segundo Orden No Amortiguado           | $$( \frac{\omega_n^2}{s^2 + \omega_n^2} \)$$                          | $$( \frac{d^2y(t)}{dt^2} + \omega_n^2 y(t) = \omega_n^2 u(t) \)$$    | Oscilación sostenida                   |
 
 ## 8. Ejercicios 
+
 ## Función de Transferencia
 
  Ejercicio 8.1 La función de transferencia está dada por:
@@ -304,7 +305,7 @@ $$G(s) = \frac{s + 3}{s^3 + 11s^2 + 12s + 18}$$
 - 
   ## Ejercicio 8.2
 
-\textbf{Función de Transferencia:}
+{Función de Transferencia:}
 
 $$G(s) = \frac{7}{s^2 + 5s + 10}$$
 
