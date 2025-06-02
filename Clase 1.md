@@ -254,4 +254,83 @@ Y finalmente:
 
 $$\lim_{s \to 0} \frac{4}{5s + 1} = \frac{4}{1} = 4$$
 
+## 7. Tablas
+
+### Tabla: Tipos de funciones de transferencia, sus ecuaciones y respuestas
+
+| Tipo de Sistema                        | Función de Transferencia \( G(s) \)                                | Ecuación Diferencial (Tiempo)                                      | Tipo de Respuesta                      |
+|----------------------------------------|--------------------------------------------------------------------|---------------------------------------------------------------------|----------------------------------------|
+| Primer Orden                           | $$( \frac{K}{\tau s + 1} \)$$                                         | $$( \tau \frac{dy(t)}{dt} + y(t) = K u(t) \)$$                         | Exponencial decreciente                |
+| Primer Orden con Polo en el Origen     | $$( \frac{K}{s(\tau s + 1)} \)$$                                     | $$( \tau \frac{d^2y(t)}{dt^2} + \frac{dy(t)}{dt} = K u(t) \)$$        | Rampa + estabilización                 |
+| Segundo Orden Subamortiguado           | $$( \frac{\omega_n^2}{s^2 + 2\zeta\omega_n s + \omega_n^2} \)$$       | $$( \frac{d^2y(t)}{dt^2} + 2\zeta\omega_n \frac{dy(t)}{dt} +\omega_n^2 y(t) = \omega_n^2 u(t) \) | Oscilatoria amortiguada                |
+| Segundo Orden Críticamente Amortiguado | $$( \frac{\omega_n^2}{s^2 + 2\omega_n s + \omega_n^2} \)$$           | Igual que arriba con \( \zeta = 1 \)                                | Más rápida sin oscilación              |
+| Segundo Orden Sobreamortiguado         | $$( \frac{\omega_n^2}{s^2 + 2\zeta\omega_n s + \omega_n^2} \)$$      | Igual que arriba con \( \zeta > 1 \)                                | Dos exponentes reales negativos        |
+| Segundo Orden No Amortiguado           | $$( \frac{\omega_n^2}{s^2 + \omega_n^2} \)$$                          | $$( \frac{d^2y(t)}{dt^2} + \omega_n^2 y(t) = \omega_n^2 u(t) \)$$    | Oscilación sostenida                   |
+
+## 8. Ejercicios 
+## Función de Transferencia
+
+ Ejercicio 8.1 La función de transferencia está dada por:
+
+$$G(s) = \frac{s + 3}{s^3 + 11s^2 + 12s + 18}$$
+---
+
+### 🔹 Ceros
+
+Los ceros son las raíces del numerador:
+
+$$s + 3 = 0 \Rightarrow s = -3$$
+
+---
+
+### 🔹 Polos
+
+Los polos son las raíces del denominador:
+
+$$s^3 + 11s^2 + 12s + 18 = 0$$
+
+Este polinomio cúbico no se puede factorizar fácilmente con raíces racionales simples. Se recomienda usar métodos numéricos (como en MATLAB o Python) para encontrar las raíces.
+
+---
+
+### ✅ Resultado final
+
+- **Función de Transferencia**:
+
+$$G(s) = \frac{s + 3}{s^3 + 11s^2 + 12s + 18}$$
+
+- **Cero**: $s = -3$  
+- **Polos**: raíces de $s^3 + 11s^2 + 12s + 18$
+- 
+  ## Ejercicio 8.2
+
+\textbf{Función de Transferencia:}
+
+$$G(s) = \frac{7}{s^2 + 5s + 10}$$
+
+{1. Ceros:}
+
+{El numerador es una constante (7), por lo tanto no hay ceros.}
+
+{Ceros} = \varnothing
+
+{2. Polos:}
+
+{Se obtienen resolviendo el denominador:}
+
+s^2 + 5s + 10 = 
+
+{Usamos la fórmula cuadrática:}
+
+$$\quad s = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+
+a = 1, b = 5, c = 10
+
+$$s = \frac{-5 \pm \sqrt{5^2 - 4(1)(10)}}{2(1)} = \frac{-5 \pm \sqrt{25 - 40}}{2}$$
+
+$$s = \frac{-5 \pm \sqrt{-15}}{2} = \frac{-5}{2} \pm \frac{j\sqrt{15}}{2}$$
+
+{Polos} 
+
+$$s= \frac{-5}{2} \pm \frac{j\sqrt{15}}{2}$$
 
