@@ -122,6 +122,9 @@ Los engranes y las bandas que están sobre una polea son dispositivos mecánicos
 fuerza, el par, la velocidad y el desplazamiento angular. La Figura 5.11 ilustra dos engranes acoplados; la inercia y la fricción de los engranes se despreciarán momentáneamente en
 el caso ideal considerado. 
 
+<div align="center">
+<img src="">
+</div>
 
 
 
