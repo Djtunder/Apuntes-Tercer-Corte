@@ -56,7 +56,7 @@ Este sistema electromecanico esta formado por tres etapas que son:
 3.21 La primera etapa cuesta de un circuito RL, donde viene la etapa de transducción y posteriormente la carga acoplada al rotor del motor (RL)
 
 ## 4. Ecuaciones 
-### 1. Parte eléctrica:
+### 4.1 Parte eléctrica:
 Consta de una bobina de inductancia \( L_c \) y una resistencia \( R_c \):
 
 $$[L_c \frac{di_c}{dt} + R_c i_c = v_c(t)\]$$
@@ -65,6 +65,7 @@ cuya representación en el dominio \( s \) es:
 
 $$[I_c(s) = V(s) \cdot \frac{1}{sL_c + R_c}\]$$
 
+## 4.2 El Torque del motor aplicado a la parte mecanica
 
 
 
