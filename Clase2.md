@@ -230,13 +230,23 @@ Una palanca es un segmento rígido que posee un punto de apoyo fijo alrededor de
 es un elemento que queda descrito por una ecuación diferencial de orden cero, esto es, por medio de una relaciónalgebraica, en donde el voltaje de salida Vo es proporcional al  desplazamiento del cursor del potenciómetro, el cual puede ser de rotación
 
 <div align="center">
-<img src="" width="300">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/5e9a949c2656850d0f1689cb1e691b8299698828/Build/Poternciometro.png" width="300">
 </div>
 
 El comportamiento de rotacion del potenciometro esta definido con la siguiente ecuacion:
 
 $$[V_o = \frac{\theta}{\theta_{\text{máx}}} V_c]$$
 
+## 5.6 Tacometros
+
+Son dispositivos que convierten la velocidad angular a voltaje.
+
+$$v(t) = k \frac{d\theta(t)}{dt}}$$
+
+$$G(s) = \frac{V(s)}{\Theta(s)} = ks$$
+
+<div align="center">
+<img src="
 
 
 
