@@ -11,8 +11,30 @@ El modelamiento de sistemas complejos que incluyen solenoides, motores DC, engra
 
 ## 3. Deficiones
 
-3.1 Selenoide: • El electroimán atrae una masa acoplada por medio de un resorte y se considera el mortiguamiento dado por la envolvente de la bobina.
+3.1 Selenoide: 
+
+El electroimán atrae una masa acoplada por medio de un resorte y se considera el mortiguamiento dado por la envolvente de la bobina.Cuando se pasa electricidad por la bobina, se crea un campo magnético. Este campo magnético mueve un émbolo o núcleo dentro de la bobina. Este movimiento del émbolo es lo que permite que se utilicen para una amplia variedad de aplicaciones, desde válvulas de control hasta interruptores eléctricos.
+
+Son fundamentales en una gran cantidad de productos y sistemas que utilizamos a diario, desde los electrodomésticos en nuestros hogares hasta la maquinaria industrial. Su capacidad para convertir energía eléctrica en energía mecánica los convierte en una tecnología esencial en una amplia gama de industrias.
 
 <div align="center">
 <img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/17e548d4e792fe1a0b040a5fdcb99999f53198b5/Build/imagen%20de%20selenoide.png" width="300">
 </div>
+
+Aqui vamos a presentarlas ecuaciones diferenciales, mas generales del sistema:
+
+### Ecuaciones diferenciales y función de transferencia
+
+#### Ecuación diferencial del sistema masa-resorte-amortiguador:
+
+$$\[m \frac{d^2x}{dt^2} + b \frac{dx}{dt} + kx = f(t)\]$$
+
+#### Transformada de Laplace y función de transferencia:
+
+$$\[X(s) = F(s) \cdot \frac{1}{ms^2 + bs + k}\]$$
+
+#3.2 Representacion de los Diagramas de Bloques
+Aqui se puede representar de manera grafica, el sistema complejo, con su respectiva entrada y salida.
+
+
+
