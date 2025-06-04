@@ -56,7 +56,8 @@ Este sistema electromecanico esta formado por tres etapas que son:
 3.21 La primera etapa cuesta de un circuito RL, donde viene la etapa de transducción y posteriormente la carga acoplada al rotor del motor (RL)
 
 ## 4. Ecuaciones 
-### 4.1 Parte eléctrica:
+
+## 4.1 Parte eléctrica:
 Consta de una bobina de inductancia \( L_c \) y una resistencia \( R_c \):
 
 $$[L_c \frac{di_c}{dt} + R_c i_c = v_c(t)\]$$
@@ -93,24 +94,33 @@ $$\Theta(s) = T_c(s) \cdot \frac{1}{s^2 J + b s}$$
 
 ## 4.4 La conexión de los modelos se realiza de la siguiente
  manera:
-
- # 4.41  Torque desarrollado cuando la corriente de campo es constante
+ ## 4.41  Torque desarrollado cuando la corriente de campo es constante
  
 $$T_m(s) = (K_a \cdot K_c \cdot I_c) \cdot I_a(s) = K_m \cdot I_a(s)$$
 
-# 4.42 Ecuación de voltaje en la armadura del motor DC
+## 4.42 Ecuación de voltaje en la armadura del motor DC
 
 $$V_a(s) = (s L_a + R_a) \cdot I_a(s) + V_b(s)$$
 
-# 4.43 Relación de torque con la carga
+## 4.43 Relación de torque con la carga
 
 $$T_c(s) = T_m(s) - T_p(s)$$
 
-# 4.44 Ecuación de movimiento (parte mecánica del sistema)
+## 4.44 Ecuación de movimiento (parte mecánica del sistema)
 
 $$\Theta(s) = T_c(s) \cdot \frac{1}{s^2 J + b s}$$
 
 Finalmente tenemos el modelo resultante del diagrama de Bloques.
+
+<div align="center">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/6f90e0eb1235facb7bbc7f61b98839452576609f/Build/Diagramam%20de%20bloques%202.png" width="300">
+</div>
+
+## 5.1 Engranajes y Poleas
+
+Los engranes y las bandas que están sobre una polea son dispositivos mecánicos que transmiten energía desde una parte del sistema a otra, en una forma tal que se alteran la
+fuerza, el par, la velocidad y el desplazamiento angular. La Figura 5.11 ilustra dos engranes acoplados; la inercia y la fricción de los engranes se despreciarán momentáneamente en
+el caso ideal considerado. 
 
 
 
