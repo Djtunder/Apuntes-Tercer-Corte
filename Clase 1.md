@@ -335,3 +335,14 @@ $$s = \frac{-5 \pm \sqrt{-15}}{2} = \frac{-5}{2} \pm \frac{j\sqrt{15}}{2}$$
 
 $$s= \frac{-5}{2} \pm \frac{j\sqrt{15}}{2}$$
 
+## 9. Conclusiones
+9.1 Aprendimos que la funcion de Transferencia es una funcion matematica que describe como un sistema dinamico responde de una entrada a una salida .
+Es importante analizar el sistema ya que nos permite ver como el sistema se comporta, bajo diferentes condiciones
+
+9.2 Los polos y ceros de una función de transferencia determinan de forma directa el comportamiento dinámico de un sistema. Los ceros influyen en la forma de la respuesta del sistema, mientras que los polos definen su estabilidad y velocidad de respuesta. Estos va ser importante, ya que la ubicación de los polos va definir si el sistema si es estable, inestable o marginamente inestable.
+
+## 10. Bibliografia 
+Cote, J. (s.f.). Función de Transferencia [Diapositivas de clase]. Escuela de Tecnología Electrónica, ETITC.
+
+Kuo, B. C. (1996). Dinámica de sistemas físicos (3.ª ed.). Prentice Hall.
+
