@@ -47,7 +47,7 @@ Figra 3.2  Representacion grafica del Diagrama de Bloques
 Un motor de CD es un dispositivo formado por un circuito eléctrico y un sistema mecánico de rotación. Su i nalidad es la de proporcionar torque a una carga. En esta sección se considerarán dos versiones del motor de CD: aquél controlado por corriente de campo y el correspondiente controlado por corriente de armadura. Además, se incluirá una entrada adicional a la entrada de referencia, esto es, una entrada de perturbación,que equivale a una entrada no deseada, pero inevitable, y se analizará su efecto sobre el sistema. 
 
 <div align="center">
-<img src="">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/f65138c0c4cd4ce0228a9b00b143234f770be813/Build/Sistema%20Motor%20DC.png" width="300">
 </div>
 
 Figura 3.2 Motor DC, controlado por corriente de campo
