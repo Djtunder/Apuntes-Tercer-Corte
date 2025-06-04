@@ -123,8 +123,34 @@ fuerza, el par, la velocidad y el desplazamiento angular. La Figura 5.11 ilustra
 el caso ideal considerado. 
 
 <div align="center">
-<img src="">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/b220c165e3830a4b013264ba09b3d88f14d25879/Build/Engranajes%20y%20Poleasd.png" width="300">
 </div>
+
+# 5.2 Ecuaciones de los Torques y desplazamientos Angulares
+
+Relaciones entre los torques τ₁ y τ₂, los desplazamientos angulares θ₁ y θ₂, y los números de dientes N₁ y N₂ de los engranes son:
+
+$$ {\tau_2}{\tau_1} = \frac{N_2}{N_1}, \quad \frac{N_2}{N_1} = -\frac{\theta_1}{\theta_2} \tag{3.51}$$
+
+% Así, las ecuaciones del primario y secundario son, respectivamente:
+
+$$ {J_1 \frac{d^2 \theta_1}{dt^2} + \beta_1 \frac{d \theta_1}{dt} + \tau_1 = \tau \tag{3.52}$$
+
+$$ {J_2 \frac{d^2 \theta_2}{dt^2} + \beta_2 \frac{d \theta_2}{dt} + \tau_2 = 0 \tag{3.53}$$
+
+De acuerdo con las ecuaciones (3.51), τ₂ se escribe en términos de τ₁ y θ₂ en función de θ₁:
+
+$$ {\tau_2 = \tau_1 \frac{N_2}{N_1}, \quad \theta_2 = -\theta_1 \frac{N_1}{N_2} \tag{3.54}$$
+
+% Al sustituir (3.54) en (3.53) y al reordenar:
+
+$$ {J_2 \( \frac{N_1}{N_2} \right)^2 \frac{d^2 \theta_1}{dt^2} + \beta_2 \left( \frac{N_1}{N_2} \right)^2 \frac{d \theta_1}{dt} = \tau_1 \tag{3.55}$$
+
+% Finalmente:
+
+$$[ J_1 + \left( \frac{N_1}{N_2} \right)^2 J_2 \right] \frac{d^2 \theta_1}{dt^2} + [ \beta_1 + ( \frac{N_1}{N_2} \right)^2 \beta_2 \right] \frac{d \theta_1}{dt} = \tau \tag{3.56}$$
+
+
 
 
 
