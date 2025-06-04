@@ -67,6 +67,50 @@ $$[I_c(s) = V(s) \cdot \frac{1}{sL_c + R_c}\]$$
 
 ## 4.2 El Torque del motor aplicado a la parte mecanica
 
+El torque desarrollado es proporcional al Φ y a la corriente de armadura
+
+% Torque desarrollado por el motor
+
+$$T_m = K_a \cdot i_a(t) \cdot K_c \cdot i_c(t)$$
+
+% Torque en dominio de Laplace
+
+$$T_m(s) = (K_a \cdot K_c \cdot I_a) \cdot I_c(s) = K_m \cdot I_c(s)$$
+
+% Torque aplicado a la carga
+
+$$T_c(s) = T_m(s) - T_p(s)$$
+
+## 4.3 Motor DC en corriente de Campo 
+
+% Ecuación diferencial del sistema mecánico
+
+$$J \frac{d^2 \theta}{dt^2} + b \frac{d \theta}{dt} + k \theta = \tau(t)$$
+
+% Función de transferencia en el dominio de Laplace
+
+$$\Theta(s) = T_c(s) \cdot \frac{1}{s^2 J + b s}$$
+
+## 4.4 La conexión de los modelos se realiza de la siguiente
+ manera:
+
+ # 4.41  Torque desarrollado cuando la corriente de campo es constante
+ 
+$$T_m(s) = (K_a \cdot K_c \cdot I_c) \cdot I_a(s) = K_m \cdot I_a(s)$$
+
+# 4.42 Ecuación de voltaje en la armadura del motor DC
+
+$$V_a(s) = (s L_a + R_a) \cdot I_a(s) + V_b(s)$$
+
+# 4.43 Relación de torque con la carga
+
+$$T_c(s) = T_m(s) - T_p(s)$$
+
+# 4.44 Ecuación de movimiento (parte mecánica del sistema)
+
+$$\Theta(s) = T_c(s) \cdot \frac{1}{s^2 J + b s}$$
+
+Finalmente tenemos el modelo resultante del diagrama de Bloques.
 
 
 
