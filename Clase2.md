@@ -169,10 +169,56 @@ $$[\Theta(s) = V_c(s) \frac{K_m}{(sL_c + R_c)(Js^2 + bs)} - T_p(s) \frac{1}{(Js^
 # 📚 Ejercicio 1 
 Obtenga el circuito equivalente y la función de transferencia resultante para el sistema mostrado en la i gura 3.27, para lo que hay que considerar:
 
+<div align="center">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/aea59a5a1a56e6acce047e5bb64c1a60748536b2/Build/Ejercicio%20de%20Engranajes%20y%20Poleas%202%20.png" width="300">
+</div>
+
 a) Masa despreciable de los engranes.
 b) Halle la Funcion de Transferencia del Sistema.
 
 Solución 
+
+Ecuación de la primera imagen (Soderberg criterion)
+$$[J_2 \left(\frac{N_1}{N_2}\right)^2 \frac{d^2\theta_1}{dt^2} + \beta_2 \left(\frac{N_1}{N_2}\right)^2 \frac{d\theta_1}{dt} = \tau_1]$$
+
+Ecuación simplificada o combinada de la primera imagen
+
+$$[\therefore \left[J_1 + \left(\frac{N_1}{N_2}\right)^2 J_2\right] \frac{d^2\theta_1}{dt^2} + \left[\beta_1 + \left(\frac{N_1}{N_2}\right)^2 \beta_2\right] \frac{d\theta_1}{dt} = \tau]$$
+
+Ecuación izquierda de la segunda imagen
+
+$$[\Theta(s) = V_c(s) \frac{K_m}{(sL_c + R_c)(Js^2 + bs)} - T_p(s) \frac{1}{(Js^2 + bs)}]$$
+
+% Ecuación derecha de la segunda imagen (Two dimensional Taylor Series)
+
+$$[\frac{\Theta(s)}{V_c(s)} = \frac{K_m}{(sL_c + R_c)(Js^2 + bs)}]$$
+
+ Ecuación principal de la tercera imagen 
+
+$$[\left[J_1+\left(\frac{N_1}{N_2}\right)^2 J_2\right] \frac{d^2\theta_1}{dt^2}+\left[\beta_1+\left(\frac{N_1}{N_2}\right)^2 \beta_2\right] \frac{d\theta_1}{dt}=\tau]$$
+
+ Ecuación bajo
+
+"a) Masa despreciable de los engranes" 
+$$[\therefore \left(\frac{N_1}{N_2}\right)^2 \left(J \frac{d^2}{dt^2}+\beta \frac{d}{dt}\right)\theta_1 = \tau]$$
+
+ Ecuación bajo "
+ b) Masa no despreciable de los engranes" 
+ 
+$$[\left[J_{N1}+\left(\frac{N_1}{N_2}\right)^2 (J+J_{N2})\right] \frac{d^2\theta_1}{dt^2}+\left(\frac{N_1}{N_2}\right)^2 \beta=\tau]$$
+
+% Definición de beta_equiv de la cuarta imagen
+$$[\beta_{equiv} = \left(\frac{N_1}{N_2}\right)^2 \beta]$$
+
+ Definición de J_equiv de la cuarta imagen
+$$[J_{equiv} = \left[J_{N1}+\left(\frac{N_1}{N_2}\right)^2 (J+J_{N2})\right]$$
+
+ Función de transferencia G(s) de la cuarta imagen
+$$[G(s) = \frac{\Theta(s)}{T(s)} = \frac{1}{s(J_{equiv}s + \beta_{equiv})}]$$
+
+## 5.4 Palancas
+🔑 Definición
+Una palanca es un segmento rígido que posee un punto de apoyo fijo alrededor del cual puede realizar la rotación cuando se aplica sobre ella una fuerza externa o interna. La longitud de la palanca entre el punto de apoyo y el punto de aplicación de la resistencia se llama brazo de resistencia, y la longitud entre el punto de apoyo y el punto de aplicación de la fuerza se llama brazo de fuerza.
 
 
 
