@@ -130,26 +130,49 @@ el caso ideal considerado.
 
 Relaciones entre los torques τ₁ y τ₂, los desplazamientos angulares θ₁ y θ₂, y los números de dientes N₁ y N₂ de los engranes son:
 
-$$ {\tau_2}{\tau_1} = \frac{N_2}{N_1}, \quad \frac{N_2}{N_1} = -\frac{\theta_1}{\theta_2} \tag{3.51}$$
+### Relaciones entre los torques \( \tau_1 \) y \( \tau_2 \), los desplazamientos angulares \( \theta_1 \) y \( \theta_2 \), y los números de dientes \( N_1 \) y \( N_2 \) de los engranes son:
 
-% Así, las ecuaciones del primario y secundario son, respectivamente:
+$$[\frac{\tau_2}{\tau_1} = \frac{N_2}{N_1}, \quad \frac{N_2}{N_1} = -\frac{\theta_1}{\theta_2}]$$
 
-$$ {J_1 \frac{d^2 \theta_1}{dt^2} + \beta_1 \frac{d \theta_1}{dt} + \tau_1 = \tau \tag{3.52}$$
+---
 
-$$ {J_2 \frac{d^2 \theta_2}{dt^2} + \beta_2 \frac{d \theta_2}{dt} + \tau_2 = 0 \tag{3.53}$$
+### Así, las ecuaciones del primario y secundario son, respectivamente:
 
-De acuerdo con las ecuaciones (3.51), τ₂ se escribe en términos de τ₁ y θ₂ en función de θ₁:
+$$[\frac{\tau_2}{\tau_1} = \frac{N_2}{N_1}\]$$
 
-$$ {\tau_2 = \tau_1 \frac{N_2}{N_1}, \quad \theta_2 = -\theta_1 \frac{N_1}{N_2} \tag{3.54}$$
+$$[\frac{N_2}{N_1} = -\frac{\theta_1}{\theta_2}\]$$
 
-% Al sustituir (3.54) en (3.53) y al reordenar:
+Así, las ecuaciones del primario y secundario son, respectivamente:
 
-$$ {J_2 \( \frac{N_1}{N_2} \right)^2 \frac{d^2 \theta_1}{dt^2} + \beta_2 \left( \frac{N_1}{N_2} \right)^2 \frac{d \theta_1}{dt} = \tau_1 \tag{3.55}$$
+$$[J_1 \frac{d^2 \theta_1}{dt^2} + \beta_1 \frac{d \theta_1}{dt} + \tau_1 = \tau]$$
 
-% Finalmente:
+$$[J_2 \frac{d^2 \theta_2}{dt^2} + \beta_2 \frac{d \theta_2}{dt} + \tau_2 = 0]$$
 
-$$[ J_1 + \left( \frac{N_1}{N_2} \right)^2 J_2 \right] \frac{d^2 \theta_1}{dt^2} + [ \beta_1 + ( \frac{N_1}{N_2} \right)^2 \beta_2 \right] \frac{d \theta_1}{dt} = \tau \tag{3.56}$$
+De acuerdo con las ecuaciones (3.51), \(\tau_2\) se escribe en términos de \(\tau_1\), y \(\theta_2\) en función de \(\theta_1\):
 
+$$[\tau_2 = \tau_1 \frac{N_2}{N_1}\]$$
+
+$$[\theta_2 = -\theta_1 \frac{N_1}{N_2}\]$$
+
+## Engranajes y Poleas
+
+• J y 𝐾𝑚 Cambian si se tiene en cuenta el efecto de los engranajes o poleas.
+
+$$[J_2 \left(\frac{N_1}{N_2}\right)^2 \frac{d^2\theta_1}{dt^2} + \beta_2 \left(\frac{N_1}{N_2}\right)^2 \frac{d\theta_1}{dt} = \tau_1]$$
+
+$$\left[J_1 + \left(\frac{N_1}{N_2}\right)^2 J_2\right] \frac{d^2\theta_1}{dt^2} + \left[\beta_1 + \left(\frac{N_1}{N_2}\right)^2 \beta_2\right] \frac{d\theta_1}{dt} = \tau]$$
+
+$$[\Theta(s) = V_c(s) \frac{K_m}{(sL_c + R_c)(Js^2 + bs)} - T_p(s) \frac{1}{(Js^2 + bs)}]$$
+
+## 📚 5.3 Ejercicios
+
+# 📚 Ejercicio 1 
+Obtenga el circuito equivalente y la función de transferencia resultante para el sistema mostrado en la i gura 3.27, para lo que hay que considerar:
+
+a) Masa despreciable de los engranes.
+b) Halle la Funcion de Transferencia del Sistema.
+
+Solución 
 
 
 
