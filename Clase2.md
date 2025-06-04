@@ -20,21 +20,54 @@ Son fundamentales en una gran cantidad de productos y sistemas que utilizamos a 
 <div align="center">
 <img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/17e548d4e792fe1a0b040a5fdcb99999f53198b5/Build/imagen%20de%20selenoide.png" width="300">
 </div>
+Figura 3.1 Imagen de un selenoide 
 
 Aqui vamos a presentarlas ecuaciones diferenciales, mas generales del sistema:
 
-### Ecuaciones diferenciales y función de transferencia
+## Ecuaciones diferenciales y función de transferencia
 
-#### Ecuación diferencial del sistema masa-resorte-amortiguador:
+## Ecuación diferencial del sistema masa-resorte-amortiguador:
 
 $$\[m \frac{d^2x}{dt^2} + b \frac{dx}{dt} + kx = f(t)\]$$
 
-#### Transformada de Laplace y función de transferencia:
+##  Transformada de Laplace y función de transferencia:
 
 $$\[X(s) = F(s) \cdot \frac{1}{ms^2 + bs + k}\]$$
 
 #3.2 Representacion de los Diagramas de Bloques
+
 Aqui se puede representar de manera grafica, el sistema complejo, con su respectiva entrada y salida.
+
+<div align="center">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/774438ef0825d4d0f775a8e946da5430f5de821f/Build/Representacion%20de%20Diagramas%20de%20Bloques%20%20.png" width="300">
+</div>
+Figra 3.2  Representacion grafica del Diagrama de Bloques
+
+## Motor DC 
+Un motor de CD es un dispositivo formado por un circuito eléctrico y un sistema mecánico de rotación. Su i nalidad es la de proporcionar torque a una carga. En esta sección se considerarán dos versiones del motor de CD: aquél controlado por corriente de campo y el correspondiente controlado por corriente de armadura. Además, se incluirá una entrada adicional a la entrada de referencia, esto es, una entrada de perturbación,que equivale a una entrada no deseada, pero inevitable, y se analizará su efecto sobre el sistema. 
+
+<div align="center">
+<img src="">
+</div>
+
+Figura 3.2 Motor DC, controlado por corriente de campo
+
+Este sistema electromecanico esta formado por tres etapas que son:
+3.21 La primera etapa cuesta de un circuito RL, donde viene la etapa de transducción y posteriormente la carga acoplada al rotor del motor (RL)
+
+## 4. Ecuaciones 
+### 1. Parte eléctrica:
+Consta de una bobina de inductancia \( L_c \) y una resistencia \( R_c \):
+
+$$[L_c \frac{di_c}{dt} + R_c i_c = v_c(t)\]$$
+
+cuya representación en el dominio \( s \) es:
+
+$$[I_c(s) = V(s) \cdot \frac{1}{sL_c + R_c}\]$$
+
+
+
+
 
 
 
