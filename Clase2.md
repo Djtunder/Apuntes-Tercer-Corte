@@ -14,5 +14,5 @@ El modelamiento de sistemas complejos que incluyen solenoides, motores DC, engra
 3.1 Selenoide: • El electroimán atrae una masa acoplada por medio de un resorte y se considera el mortiguamiento dado por la envolvente de la bobina.
 
 <div align="center">
-< img src="">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/17e548d4e792fe1a0b040a5fdcb99999f53198b5/Build/imagen%20de%20selenoide.png" width="300">
 </div>
