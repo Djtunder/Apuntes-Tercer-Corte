@@ -221,5 +221,13 @@ $$[G(s) = \frac{\Theta(s)}{T(s)} = \frac{1}{s(J_{equiv}s + \beta_{equiv})}]$$
 Una palanca es un segmento rígido que posee un punto de apoyo fijo alrededor del cual puede realizar la rotación cuando se aplica sobre ella una fuerza externa o interna. La longitud de la palanca entre el punto de apoyo y el punto de aplicación de la resistencia se llama brazo de resistencia, y la longitud entre el punto de apoyo y el punto de aplicación de la fuerza se llama brazo de fuerza.
 
 <div align="center">
-<img src=
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/5c2627ae172d67eb6371f38edb7c6b64c3060126/Build/Sistemas%20de%20Palancas.png" width="300">
+</div>
+
+## 5.5 Potenciometros 
+
+🔑 Definición
+es un elemento que queda descrito por una ecuación diferencial de orden cero, esto es, por medio de una relaciónalgebraica, en donde el voltaje de salida Vo es proporcional al  desplazamiento del cursor del potenciómetro, el cual puede ser de rotación
+
+
 
