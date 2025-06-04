@@ -229,5 +229,16 @@ Una palanca es un segmento rígido que posee un punto de apoyo fijo alrededor de
 🔑 Definición
 es un elemento que queda descrito por una ecuación diferencial de orden cero, esto es, por medio de una relaciónalgebraica, en donde el voltaje de salida Vo es proporcional al  desplazamiento del cursor del potenciómetro, el cual puede ser de rotación
 
+<div align="center">
+<img src="" width="300">
+</div>
+
+El comportamiento de rotacion del potenciometro esta definido con la siguiente ecuacion:
+
+$$[V_o = \frac{\theta}{\theta_{\text{máx}}} V_c]$$
+
+
+
+
 
 
