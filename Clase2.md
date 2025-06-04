@@ -220,7 +220,6 @@ $$[G(s) = \frac{\Theta(s)}{T(s)} = \frac{1}{s(J_{equiv}s + \beta_{equiv})}]$$
 🔑 Definición
 Una palanca es un segmento rígido que posee un punto de apoyo fijo alrededor del cual puede realizar la rotación cuando se aplica sobre ella una fuerza externa o interna. La longitud de la palanca entre el punto de apoyo y el punto de aplicación de la resistencia se llama brazo de resistencia, y la longitud entre el punto de apoyo y el punto de aplicación de la fuerza se llama brazo de fuerza.
 
-
-
-
+<div align="center">
+<img src=
 
