@@ -164,20 +164,6 @@ $$\left[J_1 + \left(\frac{N_1}{N_2}\right)^2 J_2\right] \frac{d^2\theta_1}{dt^2}
 
 $$[\Theta(s) = V_c(s) \frac{K_m}{(sL_c + R_c)(Js^2 + bs)} - T_p(s) \frac{1}{(Js^2 + bs)}]$$
 
-## 📚 5.3 Ejercicios
-
-# 📚 Ejercicio 1 
-Obtenga el circuito equivalente y la función de transferencia resultante para el sistema mostrado en la i gura 3.27, para lo que hay que considerar:
-
-<div align="center">
-<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/aea59a5a1a56e6acce047e5bb64c1a60748536b2/Build/Ejercicio%20de%20Engranajes%20y%20Poleas%202%20.png" width="300">
-</div>
-
-a) Masa despreciable de los engranes.
-b) Halle la Funcion de Transferencia del Sistema.
-
-Solución 
-
 Ecuación de la primera imagen (Soderberg criterion)
 $$[J_2 \left(\frac{N_1}{N_2}\right)^2 \frac{d^2\theta_1}{dt^2} + \beta_2 \left(\frac{N_1}{N_2}\right)^2 \frac{d\theta_1}{dt} = \tau_1]$$
 
@@ -246,10 +232,168 @@ $$v(t) = k \frac{d\theta(t)}{dt}}$$
 $$G(s) = \frac{V(s)}{\Theta(s)} = ks$$
 
 <div align="center">
-<img src="
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/91d9bced9952f7e97672ac51f3ed6b66d3fe055b/Build/tacometros.png" width="300">
+</div>
+
+## 6. Tablas
+| **Sistema**           | **Ecuación Representativa**                                                             | **Función de Transferencia** $G(s)$                                     | **Descripción**                                                        |
+| --------------------- | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| **Selenoide**         | $F = k \cdot i^2$ o modelo LR: $V = L\frac{di}{dt} + Ri$                                | $G(s) = \frac{I(s)}{V(s)} = \frac{1}{Ls + R}$                           | Actúa como actuador lineal, convierte corriente en fuerza lineal.      |
+| **Motor DC**          | $V = L\frac{di}{dt} + Ri + K_b\omega$, $T = K_t i$, $J\frac{d\omega}{dt} + b\omega = T$ | $G(s) = \frac{\Omega(s)}{V(s)} = \frac{K_t}{(Js + b)(Ls + R) + K_tK_b}$ | Convierte voltaje en velocidad angular.                                |
+| **Placa calefactora** | $C \frac{dT}{dt} = P - h(T - T_{amb})$                                                  | $G(s) = \frac{T(s)}{P(s)} = \frac{1}{Cs + h}$                           | Sistema térmico, donde la temperatura responde a la potencia aplicada. |
+| **Tacómetro**         | $V_{out} = K_t \cdot \omega$                                                            | $G(s) = \frac{V_{out}(s)}{\Omega(s)} = K_t$                             | Transforma velocidad angular en voltaje.                               |
+| **Potenciómetro**     | $V_{out} = V_{in} \cdot \frac{R_{ajustado}}{R_{total}}$                                 | $G(s) = \frac{V_{out}(s)}{V_{in}(s)} = \text{constante}$                | Dispositivo pasivo que divide voltaje.                                 |
+
+## 6.1Descripcion de las Varuables de la Tabla
+s es la variable de Laplace.
+L: inductancia, 
+R: resistencia.
+𝐾𝑡: constante de torque, 
+𝐾𝑏: Constante de Amortiguacion.
+​J : constante de fuerza contraelectromotriz.
+J: momento de inercia, 
+b: fricción viscosa.
+C: capacidad térmica, 
+h: coeficiente de pérdida de calor.
+
+## 📚 7.1 Ejercicios
+
+Obtenga el circuito equivalente y la función de transferencia resultante para el sistema mostrado en la i gura 3.27, para lo que hay que considerar:
+
+<div align="center">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/aea59a5a1a56e6acce047e5bb64c1a60748536b2/Build/Ejercicio%20de%20Engranajes%20y%20Poleas%202%20.png" width="300">
+</div>
+
+a) Masa despreciable de los engranes.
+b) Halle la Funcion de Transferencia del Sistema.
+
+# Solucion
+
+## a) Modelo del sistema (masa de engranajes despreciable)
+
+Usando la analogía mecánica-rotacional, se representa el sistema mediante elementos de:
+
+- Inercia rotacional: \( J \)
+- Fricción viscosa: \( b \)
+- Torque aplicado: \( T \)
+- Relación de engranajes: \( \frac{N_2}{N_1} \)
+
+La inercia equivalente 
+>>
+>>
+\( J_{\text{eq}} \) y la **fricción equivalente** \( b_{\text{eq}} \), vistas desde el eje del engranaje de entrada, se ajustan usando la relación:
+>>
+>>
+$$\[J_{\text{eq}} = J_{\text{salida}} \left( \frac{N_1}{N_2} \right)^2\]$$
+>>
+>>
+$$\[b_{\text{eq}} = b_{\text{salida}} \left( \frac{N_1}{N_2} \right)^2\]$$
+>>
+>>
+## b) Función de Transferencia
+
+La función de transferencia del sistema en el dominio de Laplace es:
+
+$$\[G(s) = \frac{\Theta_{\text{salida}}(s)}{T_{\text{entrada}}(s)} = \frac{1}{J_{\text{eq}} s^2 + b_{\text{eq}} s}\]$$
+
+Donde:
+$\( \Theta_{\text{salida}}(s) \)$ es el desplazamiento angular de salida
+$ \( T_{\text{entrada}}(s) \)$ es el torque de entrada
+$\( s \)$ es la variable de Laplace
+
+Esta función representa un sistema de segundo orden sin constante de rigidez (sin muelle).
 
 
 
 
 
+
+
+
+
+
+# 📚 Ejercicio 7.2  
+Los engranes y las bandas que están sobre una polea son dispositivos mecánicos que transmiten energía desde una parte del sistema a otra, en una forma tal que se alteran la
+fuerza, el par, la velocidad y el desplazamiento angular. La Figura 5.11 ilustra dos engranes acoplados; la inercia y la fricción de los engranes se despreciarán momentáneamente en
+el caso ideal considerado. 
+
+<div align="center">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/b220c165e3830a4b013264ba09b3d88f14d25879/Build/Engranajes%20y%20Poleasd.png" width="300">
+</div>
+
+# 
+
+Relaciones entre los torques τ₁ y τ₂, los desplazamientos angulares θ₁ y θ₂, y los números de dientes N₁ y N₂ de los engranes son:
+
+### Relaciones entre los torques \( \tau_1 \) y \( \tau_2 \), los desplazamientos angulares \( \theta_1 \) y \( \theta_2 \), y los números de dientes \( N_1 \) y \( N_2 \) de los engranes son:
+
+$$[\frac{\tau_2}{\tau_1} = \frac{N_2}{N_1}, \quad \frac{N_2}{N_1} = -\frac{\theta_1}{\theta_2}]$$
+
+---
+
+### Así, las ecuaciones del primario y secundario son, respectivamente:
+
+$$[\frac{\tau_2}{\tau_1} = \frac{N_2}{N_1}\]$$
+
+$$[\frac{N_2}{N_1} = -\frac{\theta_1}{\theta_2}\]$$
+
+Así, las ecuaciones del primario y secundario son, respectivamente:
+
+$$[J_1 \frac{d^2 \theta_1}{dt^2} + \beta_1 \frac{d \theta_1}{dt} + \tau_1 = \tau]$$
+
+$$[J_2 \frac{d^2 \theta_2}{dt^2} + \beta_2 \frac{d \theta_2}{dt} + \tau_2 = 0]$$
+
+De acuerdo con las ecuaciones (3.51), \(\tau_2\) se escribe en términos de \(\tau_1\), y \(\theta_2\) en función de \(\theta_1\):
+
+$$[\tau_2 = \tau_1 \frac{N_2}{N_1}\]$$
+
+$$[\theta_2 = -\theta_1 \frac{N_1}{N_2}\]$$
+
+## Engranajes y Poleas
+
+• J y 𝐾𝑚 Cambian si se tiene en cuenta el efecto de los engranajes o poleas.
+
+$$[J_2 \left(\frac{N_1}{N_2}\right)^2 \frac{d^2\theta_1}{dt^2} + \beta_2 \left(\frac{N_1}{N_2}\right)^2 \frac{d\theta_1}{dt} = \tau_1]$$
+
+$$\left[J_1 + \left(\frac{N_1}{N_2}\right)^2 J_2\right] \frac{d^2\theta_1}{dt^2} + \left[\beta_1 + \left(\frac{N_1}{N_2}\right)^2 \beta_2\right] \frac{d\theta_1}{dt} = \tau]$$
+
+$$[\Theta(s) = V_c(s) \frac{K_m}{(sL_c + R_c)(Js^2 + bs)} - T_p(s) \frac{1}{(Js^2 + bs)}]$$
+
+Ecuación de la primera imagen (Soderberg criterion)
+$$[J_2 \left(\frac{N_1}{N_2}\right)^2 \frac{d^2\theta_1}{dt^2} + \beta_2 \left(\frac{N_1}{N_2}\right)^2 \frac{d\theta_1}{dt} = \tau_1]$$
+
+Ecuación simplificada o combinada de la primera imagen
+
+$$[\therefore \left[J_1 + \left(\frac{N_1}{N_2}\right)^2 J_2\right] \frac{d^2\theta_1}{dt^2} + \left[\beta_1 + \left(\frac{N_1}{N_2}\right)^2 \beta_2\right] \frac{d\theta_1}{dt} = \tau]$$
+
+Ecuación izquierda de la segunda imagen
+
+$$[\Theta(s) = V_c(s) \frac{K_m}{(sL_c + R_c)(Js^2 + bs)} - T_p(s) \frac{1}{(Js^2 + bs)}]$$
+
+% Ecuación derecha de la segunda imagen (Two dimensional Taylor Series)
+
+$$[\frac{\Theta(s)}{V_c(s)} = \frac{K_m}{(sL_c + R_c)(Js^2 + bs)}]$$
+
+ Ecuación principal de la tercera imagen 
+
+$$[\left[J_1+\left(\frac{N_1}{N_2}\right)^2 J_2\right] \frac{d^2\theta_1}{dt^2}+\left[\beta_1+\left(\frac{N_1}{N_2}\right)^2 \beta_2\right] \frac{d\theta_1}{dt}=\tau]$$
+
+ Ecuación bajo
+
+"a) Masa despreciable de los engranes" 
+$$[\therefore \left(\frac{N_1}{N_2}\right)^2 \left(J \frac{d^2}{dt^2}+\beta \frac{d}{dt}\right)\theta_1 = \tau]$$
+
+ Ecuación bajo "
+ b) Masa no despreciable de los engranes" 
+ 
+$$[\left[J_{N1}+\left(\frac{N_1}{N_2}\right)^2 (J+J_{N2})\right] \frac{d^2\theta_1}{dt^2}+\left(\frac{N_1}{N_2}\right)^2 \beta=\tau]$$
+
+% Definición de beta_equiv de la cuarta imagen
+$$[\beta_{equiv} = \left(\frac{N_1}{N_2}\right)^2 \beta]$$
+
+ Definición de J_equiv de la cuarta imagen
+$$[J_{equiv} = \left[J_{N1}+\left(\frac{N_1}{N_2}\right)^2 (J+J_{N2})\right]$$
+
+ Función de transferencia G(s) de la cuarta imagen
+$$[G(s) = \frac{\Theta(s)}{T(s)} = \frac{1}{s(J_{equiv}s + \beta_{equiv})}]$$
 
