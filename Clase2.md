@@ -650,5 +650,13 @@ Vamos a mostrar la grafica del comportamiento del sistema.
 
 ## 10. Referencias
 
+Jorge Eduardo Cote Ballesteros. (2025). Modelamiento de Sistemas Complejos ETITC.
+
+G., R. H. (2010). *Introducción a los sistemas de control*. Obtenido de: [https://drive.google.com/file/d/1sWABGFd4pAgTpBvpUAwwjFBuFq0z364s/view?usp=sharing](https://tu-enlace-publico.com)
+
+
+
+
+
 
 
