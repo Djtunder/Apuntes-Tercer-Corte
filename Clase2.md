@@ -261,7 +261,7 @@ h: coeficiente de pérdida de calor.
 Obtenga el circuito equivalente y la función de transferencia resultante para el sistema mostrado en la i gura 3.27, para lo que hay que considerar:
 
 <div align="center">
-<img src="" width="300">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/bf0193abca6a1efd1e495e4e7835cd119cd2dc6e/Build/ejercicio%20sistema%20de%20bandas%20y%20poleas.png" width="300">
 </div>
 
 a) Masa despreciable de los engranes.
