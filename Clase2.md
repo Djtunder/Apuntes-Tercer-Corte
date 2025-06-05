@@ -597,24 +597,35 @@ $$[G(s) = \frac{\Theta(s)}{T(s)} = \frac{1}{s(J_{equiv}s + \beta_{equiv})}]$$
 ## 8. Codigo en Matlab
 
 % Parámetros del sistema
+
 m = 0.5;      % masa [kg]
+
 b = 1.0;      % fricción mecánica [N·s/m]
+
 k = 0;        % constante del resorte [N/m] (0 si no hay)
+
 L = 0.01;     % inductancia de la bobina [H]
+
 R = 2.0;      % resistencia eléctrica [ohm]
+
 K = 5.0;      % constante de fuerza del solenoide [N/A]
+
 Ke = 0.5;     % constante de fuerza contraelectromotriz [V·s/m]
 
 % Variables de estado: x1 = x (posición), x2 = dx/dt (velocidad), x3 = i (corriente)
+
 A = [ 0         1          0;
      -k/m   -b/m      K/m;
       0     -Ke/L   -R/L];
 
 B = [0; 0; 1/L];
+
 C = [1 0 0];  % salida: posición x(t)
+
 D = 0;
 
 % Crear el sistema en espacio de estados
+
 sys = ss(A, B, C, D);
 
 % Simular respuesta a escalón de voltaje de entrada
@@ -628,5 +639,16 @@ grid on;
 Vamos a mostrar la grafica del comportamiento del sistema.
 
 <div align="center">
-<img src="">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/5709eaeb9ce4d894787fe74e8276981026d1ff36/Build/respuesta%20Escalonda%20al%20sistema%20.png">
 </div>
+
+## 9. Conslusiones
+
+9.1 Aprendimos que El modelamiento de sistemas como solenoides, motores DC, engranajes y poleas permite representar fenómenos mecánicos, eléctricos y electromecánicos bajo un mismo marco matemático utilizando funciones de transferencia. Esto facilita el análisis, diseño y control de sistemas complejos mediante herramientas de la teoría de sistemas lineales.
+
+9.2 Analizando la grafica, pudimos observar que La simulación de la respuesta del sistema solenoide-masa ante una entrada escalón muestra una curva suavemente creciente, lo que indica un comportamiento de segundo orden subamortiguado o críticamente amortiguado. Este tipo de respuesta refleja que el sistema responde de forma estable pero con una velocidad limitada por la fricción mecánica y el efecto de la contraelectromotriz. A medida que el tiempo avanza, la posición tiende a un valor constante, demostrando que el sistema alcanza un estado estacionario sin oscilaciones, ideal para aplicaciones que requieren precisión y estabilidad.
+
+## 10. Referencias
+
+
+
