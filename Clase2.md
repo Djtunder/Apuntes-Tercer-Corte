@@ -41,12 +41,7 @@ Un selenoide controla la posición de una válvula hidráulica. Cuando se aplica
 𝑉(𝑡)V(t), el selenoide genera una fuerza magnética que mueve el núcleo, desplazando así la válvula.
 
 📐 Supuestos del modelo:
-El desplazamiento lineal del núcleo es 
-𝑥
-(
-𝑡
-)
-x(t).
+El desplazamiento lineal del núcleo es x(t).
 
 El selenoide tiene resistencia 
 𝑅 Resistencia. 
@@ -64,7 +59,8 @@ k que resiste el movimiento del núcleo.
 
 ### 🔸 1. Ecuación eléctrica del selenoide
 
-$$\[V(t) = L \frac{di(t)}{dt} + R i(t}\]$$
+$$\[ V(t) = L \frac{di(t)}{dt} + R i(t) \]$$
+
 
 ### 🔸 2. Fuerza generada por el selenoide
 
@@ -231,7 +227,48 @@ el caso ideal considerado.
 <img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/b220c165e3830a4b013264ba09b3d88f14d25879/Build/Engranajes%20y%20Poleasd.png" width="300">
 </div>
 
-# 5.2 Ecuaciones de los Torques y desplazamientos Angulares
+💡## 5.22 Ejemplo 
+
+Perfecto,vamos a construir un ejemplo a partir del sistema que aparece en tu imagen.Este representa un sistema mecánico rotacional con:
+
+	Un resorte de torsión k
+ 
+	Un disco con momento de inercia J
+ 
+	Un amortiguador rotacional b
+ 
+vamos a relacionatr la entra de la pocision angular con su respectiva salida:
+
+$$ \theta_i(t) \quad \text{(Entrada angular)} $$
+
+$$ \theta_o(t) \quad \text{(Salida angular)} $$
+
+ 
+Ahora, vamos a llevar este sistema a una aplicación con engranajes y poleas para un ejemplo más completo.
+
+## 🧮 Ecuaciones del sistema (ecuación de movimiento rotacional):
+
+Sumatoria de torques en el eje de salida (despreciando fricción en los engranajes):
+
+$$\[J \frac{d^2\theta_o(t)}{dt^2} + b \frac{d\theta_o(t)}{dt} + k \theta_o(t) = T_{\text{equiv}}(t)\]$$
+
+$$\[T_{\text{equiv}}(t) = \left( \frac{N_1}{N_2} \right) T_{\text{input}}(t)\]$$
+
+$$[\Rightarrow J \frac{d^2\theta_o(t)}{dt^2} + b \frac{d\theta_o(t)}{dt} + k \theta_o(t) = \left( \frac{N_1}{N_2} \right)^2 T_i(t)\]$$
+
+## Transformada de Laplace
+
+$$\[J s^2 \Theta_o(s) + b s \Theta_o(s) + k \Theta_o(s) = \left( \frac{N_1}{N_2} \right)^2 T_i(s)\]$$
+
+##  Función de Transferencia
+
+$$\[\Theta_o(s) = \frac{ \left( \frac{N_1}{N_2} \right)^2 K }{J s^2 + b s + k} \Theta_i(s)\]$$
+
+\Rightarrow \boxed{
+$$[G(s) = \frac{\Theta_o(s)}{\Theta_i(s)} = \frac{K \left( \frac{N_1}{N_2} \right)^2}{J s^2 + b s + k}]$$
+
+
+# 5.21 Ecuaciones de los Torques y desplazamientos Angulares
 
 Relaciones entre los torques τ₁ y τ₂, los desplazamientos angulares θ₁ y θ₂, y los números de dientes N₁ y N₂ de los engranes son:
 
@@ -340,7 +377,72 @@ $$[G(s) = \frac{V(s)}{\Theta(s)} = ks]$$
 <img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/91d9bced9952f7e97672ac51f3ed6b66d3fe055b/Build/tacometros.png" width="300">
 </div>
 
-## 6. Tablas
+## 6 Ecuaciones mas generales de todos los sistmeas Complejos 
+
+#6.1 Selenoide
+
+$$
+F(s) = \frac{K_s}{(m s^2 + b s + k)} \cdot I(s)
+$$
+
+- \( F(s) \): fuerza generada  
+- \( I(s) \): corriente aplicada  
+- \( m \): masa móvil  
+- \( b \): fricción viscosa  
+- \( k \): constante de resorte  
+- \( K_s \): constante del solenoide
+  
+# 6.2  Motor DC
+$$
+G(s) = \frac{\Omega(s)}{V(s)} = \frac{K_t}{(L s + R)(J s + b) + K_t K_b}
+$$
+
+- \( \Omega(s) \): velocidad angular  
+- \( V(s) \): voltaje aplicado  
+- \( L \): inductancia  
+- \( R \): resistencia  
+- \( J \): inercia  
+- \( b \): fricción  
+- \( K_t \): constante de torque  
+- \( K_b \): constante de fem
+
+# 6.3 Sistema de Poleas y Engranajes
+
+$$
+G(s) = \frac{\Theta_o(s)}{\Theta_i(s)} = \frac{K \left( \frac{N_1}{N_2} \right)^2}{J s^2 + b s + k}
+$$
+
+- \( \Theta_o(s), \Theta_i(s) \): ángulos de salida y entrada  
+- \( N_1:N_2 \): relación de engranajes  
+- \( J \): inercia equivalente  
+- \( b \): amortiguamiento  
+- \( k \): resorte de torsión  
+- \( K \): constante del actuador (si aplica)
+
+# 6.4 Tacometro
+
+$$
+V_{taco}(s) = K_t \cdot \Omega(s)
+\quad \Rightarrow \quad G(s) = \frac{V_{taco}(s)}{\Omega(s)} = K_t
+$$
+
+- \( V_{taco} \): voltaje de salida del tacómetro  
+- \( \Omega(s) \): velocidad angular  
+- \( K_t \): constante del tacómetro
+
+# 6.5 Potenciometros
+
+$$
+V_o(s) = K_p \cdot \Theta(s)
+\quad \Rightarrow \quad G(s) = \frac{V_o(s)}{\Theta(s)} = K_p
+$$
+
+- \( V_o \): salida de voltaje  
+- \( \Theta(s) \): posición angular  
+- \( K_p \): constante del potenciómetro
+
+
+## 7. Tablas
 | **Sistema**           | **Ecuación Representativa**                                                             | **Función de Transferencia** $G(s)$                                     | **Descripción**                                                        |
 | --------------------- | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | **Selenoide**         | $F = k \cdot i^2$ o modelo LR: $V = L\frac{di}{dt} + Ri$                                | $G(s) = \frac{I(s)}{V(s)} = \frac{1}{Ls + R}$                           | Actúa como actuador lineal, convierte corriente en fuerza lineal.      |
@@ -492,3 +594,39 @@ $$[J_{equiv} = \left[J_{N1}+\left(\frac{N_1}{N_2}\right)^2 (J+J_{N2})\right]$$
  Función de transferencia G(s) de la cuarta imagen
 $$[G(s) = \frac{\Theta(s)}{T(s)} = \frac{1}{s(J_{equiv}s + \beta_{equiv})}]$$
 
+## 8. Codigo en Matlab
+
+% Parámetros del sistema
+m = 0.5;      % masa [kg]
+b = 1.0;      % fricción mecánica [N·s/m]
+k = 0;        % constante del resorte [N/m] (0 si no hay)
+L = 0.01;     % inductancia de la bobina [H]
+R = 2.0;      % resistencia eléctrica [ohm]
+K = 5.0;      % constante de fuerza del solenoide [N/A]
+Ke = 0.5;     % constante de fuerza contraelectromotriz [V·s/m]
+
+% Variables de estado: x1 = x (posición), x2 = dx/dt (velocidad), x3 = i (corriente)
+A = [ 0         1          0;
+     -k/m   -b/m      K/m;
+      0     -Ke/L   -R/L];
+
+B = [0; 0; 1/L];
+C = [1 0 0];  % salida: posición x(t)
+D = 0;
+
+% Crear el sistema en espacio de estados
+sys = ss(A, B, C, D);
+
+% Simular respuesta a escalón de voltaje de entrada
+t = 0:0.01:5;        % tiempo de simulación
+step(sys, t);
+title('Respuesta del sistema solenoide-masa a entrada escalón de voltaje');
+xlabel('Tiempo (s)');
+ylabel('Desplazamiento x(t)');
+grid on;
+
+Vamos a mostrar la grafica del comportamiento del sistema.
+
+<div align="center">
+<img src="">
+</div>
