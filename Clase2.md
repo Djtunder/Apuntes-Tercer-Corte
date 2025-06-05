@@ -227,9 +227,9 @@ $$[V_o = \frac{\theta}{\theta_{\text{máx}}} V_c]$$
 
 Son dispositivos que convierten la velocidad angular a voltaje.
 
-$$v(t) = k \frac{d\theta(t)}{dt}}$$
+$$[v(t) = k \frac{d\theta(t)}{dt}]$$
 
-$$G(s) = \frac{V(s)}{\Theta(s)} = ks$$
+$$[G(s) = \frac{V(s)}{\Theta(s)} = ks]$$
 
 <div align="center">
 <img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/91d9bced9952f7e97672ac51f3ed6b66d3fe055b/Build/tacometros.png" width="300">
@@ -261,27 +261,28 @@ h: coeficiente de pérdida de calor.
 Obtenga el circuito equivalente y la función de transferencia resultante para el sistema mostrado en la i gura 3.27, para lo que hay que considerar:
 
 <div align="center">
-<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/aea59a5a1a56e6acce047e5bb64c1a60748536b2/Build/Ejercicio%20de%20Engranajes%20y%20Poleas%202%20.png" width="300">
+<img src="" width="300">
 </div>
 
 a) Masa despreciable de los engranes.
+
 b) Halle la Funcion de Transferencia del Sistema.
 
-# Solucion
+# Solución
 
 ## a) Modelo del sistema (masa de engranajes despreciable)
 
 Usando la analogía mecánica-rotacional, se representa el sistema mediante elementos de:
 
-- Inercia rotacional: \( J \)
-- Fricción viscosa: \( b \)
-- Torque aplicado: \( T \)
-- Relación de engranajes: \( \frac{N_2}{N_1} \)
+- Inercia rotacional: $\( J \)$
+- Fricción viscosa: $\( b \)$
+- Torque aplicado: $\( T \)$
+- Relación de engranajes: $\( \frac{N_2}{N_1} \)$
 
 La inercia equivalente 
 >>
 >>
-\( J_{\text{eq}} \) y la **fricción equivalente** \( b_{\text{eq}} \), vistas desde el eje del engranaje de entrada, se ajustan usando la relación:
+$\( J_{\text{eq}} \)$ y la  **fricción equivalente**  $\( b_{\text{eq}} \)$ vistas desde el eje del engranaje de entrada, se ajustan usando la relación:
 >>
 >>
 $$\[J_{\text{eq}} = J_{\text{salida}} \left( \frac{N_1}{N_2} \right)^2\]$$
@@ -303,15 +304,6 @@ $\( s \)$ es la variable de Laplace
 
 Esta función representa un sistema de segundo orden sin constante de rigidez (sin muelle).
 
-
-
-
-
-
-
-
-
-
 # 📚 Ejercicio 7.2  
 Los engranes y las bandas que están sobre una polea son dispositivos mecánicos que transmiten energía desde una parte del sistema a otra, en una forma tal que se alteran la
 fuerza, el par, la velocidad y el desplazamiento angular. La Figura 5.11 ilustra dos engranes acoplados; la inercia y la fricción de los engranes se despreciarán momentáneamente en
@@ -321,9 +313,7 @@ el caso ideal considerado.
 <img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/b220c165e3830a4b013264ba09b3d88f14d25879/Build/Engranajes%20y%20Poleasd.png" width="300">
 </div>
 
-# 
-
-Relaciones entre los torques τ₁ y τ₂, los desplazamientos angulares θ₁ y θ₂, y los números de dientes N₁ y N₂ de los engranes son:
+#Relaciones entre los torques τ₁ y τ₂, los desplazamientos angulares θ₁ y θ₂, y los números de dientes N₁ y N₂ de los engranes son:
 
 ### Relaciones entre los torques \( \tau_1 \) y \( \tau_2 \), los desplazamientos angulares \( \theta_1 \) y \( \theta_2 \), y los números de dientes \( N_1 \) y \( N_2 \) de los engranes son:
 
