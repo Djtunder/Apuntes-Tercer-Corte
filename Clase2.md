@@ -9,10 +9,11 @@ El modelamiento de sistemas complejos en ingeniería implica representar matemá
 ## 2. Resumen
 El modelamiento de sistemas complejos que incluyen solenoides, motores DC, engranajes y poleas puede abordarse mediante la obtención de funciones de transferencia individuales o usando modelos ya existentes. Estos enfoques permiten construir modelos precisos para representar sistemas dinámicos, aunque su aplicación depende del tipo de dispositivo y proceso implicado.
 
-## 3. Deficiones
+## 3. Definiciones
 
 3.1 Selenoide: 
 
+🔑 Definición
 El electroimán atrae una masa acoplada por medio de un resorte y se considera el mortiguamiento dado por la envolvente de la bobina.Cuando se pasa electricidad por la bobina, se crea un campo magnético. Este campo magnético mueve un émbolo o núcleo dentro de la bobina. Este movimiento del émbolo es lo que permite que se utilicen para una amplia variedad de aplicaciones, desde válvulas de control hasta interruptores eléctricos.
 
 Son fundamentales en una gran cantidad de productos y sistemas que utilizamos a diario, desde los electrodomésticos en nuestros hogares hasta la maquinaria industrial. Su capacidad para convertir energía eléctrica en energía mecánica los convierte en una tecnología esencial en una amplia gama de industrias.
@@ -34,6 +35,69 @@ $$\[m \frac{d^2x}{dt^2} + b \frac{dx}{dt} + kx = f(t)\]$$
 
 $$\[X(s) = F(s) \cdot \frac{1}{ms^2 + bs + k}\]$$
 
+💡# Ejemplo 3.11
+⚙️ Sistema físico:
+Un selenoide controla la posición de una válvula hidráulica. Cuando se aplica un voltaje 
+𝑉(𝑡)V(t), el selenoide genera una fuerza magnética que mueve el núcleo, desplazando así la válvula.
+
+📐 Supuestos del modelo:
+El desplazamiento lineal del núcleo es 
+𝑥
+(
+𝑡
+)
+x(t).
+
+El selenoide tiene resistencia 
+𝑅 Resistencia. 
+𝐿, Inductancia.
+K, constante de fuerza.
+𝐾𝑓, Constante de friccion.
+>>
+Hay:
+una masa 𝑚
+fricción 𝑏
+resorte con constante 𝑘
+k que resiste el movimiento del núcleo.
+
+## 🔹 Ecuaciones del sistema
+
+### 🔸 1. Ecuación eléctrica del selenoide
+
+$$\[V(t) = L \frac{di(t)}{dt} + R i(t}\]$$
+
+### 🔸 2. Fuerza generada por el selenoide
+
+$$\[F(t) = K_f \cdot i(t)\]$$
+
+### 🔸 3. Dinámica del núcleo (ecuación de movimiento)
+
+$$\[F(t) = m \frac{d^2x(t)}{dt^2} + b \frac{dx(t)}{dt} + k x(t)\]$$
+
+---
+
+## 🔹 Transformadas de Laplace
+
+### 🔸 1. Corriente en función del voltaje
+
+$$\[I(s) = \frac{V(s)}{L s + R}\]$$
+
+### 🔸 2. Fuerza en función del voltaje
+
+$$\[F(s) = K_f \cdot I(s) = \frac{K_f \cdot V(s)}{L s + R}\]$$
+
+### 🔸 3. Movimiento del núcleo en Laplace
+
+$$\[F(s) = (m s^2 + b s + k) \cdot X(s)\]$$
+
+---
+
+## 🔹 Función de Transferencia
+
+$$\[G(s) = \frac{X(s)}{V(s)} = \frac{K_f}{(m s^2 + b s + k)(L s + R)}\]$$
+
+
+
 #3.2 Representacion de los Diagramas de Bloques
 
 Aqui se puede representar de manera grafica, el sistema complejo, con su respectiva entrada y salida.
@@ -43,19 +107,59 @@ Aqui se puede representar de manera grafica, el sistema complejo, con su respect
 </div>
 Figra 3.2  Representacion grafica del Diagrama de Bloques
 
-## Motor DC 
+## 3.22 Motor DC 
+🔑 Definición
 Un motor de CD es un dispositivo formado por un circuito eléctrico y un sistema mecánico de rotación. Su i nalidad es la de proporcionar torque a una carga. En esta sección se considerarán dos versiones del motor de CD: aquél controlado por corriente de campo y el correspondiente controlado por corriente de armadura. Además, se incluirá una entrada adicional a la entrada de referencia, esto es, una entrada de perturbación,que equivale a una entrada no deseada, pero inevitable, y se analizará su efecto sobre el sistema. 
 
 <div align="center">
 <img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/f65138c0c4cd4ce0228a9b00b143234f770be813/Build/Sistema%20Motor%20DC.png" width="300">
 </div>
 
-Figura 3.2 Motor DC, controlado por corriente de campo
+Figura 3.22 Motor DC, controlado por corriente de campo
 
 Este sistema electromecanico esta formado por tres etapas que son:
 3.21 La primera etapa cuesta de un circuito RL, donde viene la etapa de transducción y posteriormente la carga acoplada al rotor del motor (RL)
 
-## 4. Ecuaciones 
+💡 Ejemplo 3.23 
+
+Un motor de corriente directa (DC) está alimentado con un voltaje 
+𝑉(𝑡) y se usa para controlar la velocidad de giro de un eje conectado a una carga con momento de inercia 
+J y fricción viscosa b. La constante de par del motor es  Kt, y la constante de fuerza contraelectromotriz (fem) es Kb El circuito del motor tiene una resistencia  𝑅y una inductancia L.
+
+##  Ecuaciones características
+### 🔸 1. Ecuación eléctrica del motor
+
+$$\[V(t) = L \frac{di(t)}{dt} + R i(t) + K_b \omega(t)\]$$
+
+### 🔸 2. Par generado por el motor
+
+$$\[T(t) = K_t \cdot i(t)\]$$
+
+### 🔸 3. Dinámica rotacional (segunda ley de Newton)
+
+$$\[T(t) = J \frac{d\omega(t)}{dt} + b \omega(t)\]$$
+
+Transformación al dominio de Laplace
+
+$$\[V(s) = (L s + R) I(s) + K_b \Omega(s)\]$$
+
+$$\[T(s) = K_t I(s)\]$$
+
+$$\[T(s) = (J s + b) \Omega(s)\]$$
+
+Sustituyendo para obtener la función de transferencia
+
+$$\[K_t I(s) = (J s + b) \Omega(s) \Rightarrow I(s) = \frac{(J s + b)}{K_t} \Omega(s)\]$$
+
+$$\[V(s) = (L s + R) \cdot \frac{(J s + b)}{K_t} \Omega(s) + K_b \Omega(s)\]$$
+
+$$\[V(s) = \left[ \frac{(L s + R)(J s + b)}{K_t} + K_b \right] \Omega(s)\]$$
+
+\Rightarrow \boxed
+$$[{G(s) = \frac{\Omega(s)}{V(s)} = \frac{K_t}{(L s + R)(J s + b) + K_t K_b}}]$$
+
+
+## 4. Ecuaciones del Motor DC
 
 ## 4.1 Parte eléctrica:
 Consta de una bobina de inductancia \( L_c \) y una resistencia \( R_c \):
@@ -118,6 +222,7 @@ Finalmente tenemos el modelo resultante del diagrama de Bloques.
 
 ## 5.1 Engranajes y Poleas
 
+🔑 Definición
 Los engranes y las bandas que están sobre una polea son dispositivos mecánicos que transmiten energía desde una parte del sistema a otra, en una forma tal que se alteran la
 fuerza, el par, la velocidad y el desplazamiento angular. La Figura 5.11 ilustra dos engranes acoplados; la inercia y la fricción de los engranes se despreciarán momentáneamente en
 el caso ideal considerado. 
