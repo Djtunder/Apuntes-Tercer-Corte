@@ -73,10 +73,22 @@ $$Y_2(s) = (U_1(s)G_1(s))G_2(s)$$
 $$Y_2(s) = U_1(s)G_1(s)G_2(s)$$
 
 💡Ejemplo 4.2
-Identificar los elementos de Sistema de la figura
+Identificar los elementos de Sistema de la figura.
+
 <div align="center">
-<img src="">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/293a3b8bd662565c934caa904a7a9d6c70f506b4/Build/ejemplo%204.2.png" width="300">
 </div>
 
+Los elementos  que podemos ver en el diagrama de bloques son: 
 
+1) Flechas: que conectan los elementos entre si, y que apuntan a la derecha son positivos y si apuntan a la izquierda son de orientación negativa.
+2) Punto de Suma: Aqui podemos que Realiza operaciones (suma o resta) entre señales únicamente.
+3) Bloques: aca podemos simbolos de la funcion matematica en este caso tenemos una ganancia de bloque G(S).
+4) Ramificaciones: Aqui podemos ver una ramificacion en 
+
+# 5. Aplicación del Diagrama de Bloques 
+
+<div align="center">
+<img src="
+</div>
 
