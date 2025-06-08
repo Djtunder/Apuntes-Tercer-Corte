@@ -90,5 +90,6 @@ Los elementos  que podemos ver en el diagrama de bloques son:
 
 <div align="center">
 <img src="
+
 </div>
 
