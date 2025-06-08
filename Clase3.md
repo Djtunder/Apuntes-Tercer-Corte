@@ -89,7 +89,6 @@ Los elementos  que podemos ver en el diagrama de bloques son:
 # 5. Aplicación del Diagrama de Bloques 
 
 <div align="center">
-<img src="
-
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/c8a67ffbe690da7dc9bf84b01c7959b182328210/Build/aplicacion%20de%20sistemas%20termicos.png" width="300">
 </div>
 
