@@ -58,15 +58,12 @@ transferencia del bloque.
 Vamos a ver como se soluciona los Diagramas de bloques conectados en cascada. 
 
 Las ecuaciones que describen este sistema son:
+$$Y_1(s) = U_1(s)G_1(s)$$
 
-$$[Y_1(s) &= U_1(s)G_1(s)]$$
+$$Y_2(s) = Y_1(s)G_2(s)$$
 
-$$[Y_2(s) &= Y_1(s)G_2(s)]$$
+Sustituyendo $Y_1(s)$ en la segunda ecuación, obtenemos:
 
+$$Y_2(s) = (U_1(s)G_1(s))G_2(s)$$
 
-Sustituyendo $Y_1(s) en la segunda ecuación, obtenemos:
-
-$$[Y_2(s) &= (U_1(s)G_1(s))G_2(s)]$$
-
-$$[Y_2(s) &= U_1(s)G_1(s)G_2(s)]$$
-
+$$Y_2(s) = U_1(s)G_1(s)G_2(s)$$
