@@ -13,9 +13,14 @@ El álgebra de bloques es una herramienta esencial en la Dinámica de Sistemas p
 
 # 3. Definciones
 
-# 3.1 Que es el metodo de Diagrama de Bloques
+# 3.1 Que es un de Diagrama de Bloques.
 
 Los diagramas de bloques son una herramienta gráfica fundamental que facilita la comprensión de la interacción entr múltiples sistemas o componentes. Históricamente, su desarrollo se atribuye a J. Watt, quien comenzó a utilizarlos para explicar el funcionamiento de su primer sistema de control.
 
 # 3.2 Elmentos que componen los Diagrmas de Bloques
+# 3.21 Bloque: Es un símbolo para representar la operación matemática que sobre la señal de entrada hace el bloque para producir la salida
+
+<div align="center">
+< img src="">
+</div>
 
