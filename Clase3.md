@@ -57,7 +57,7 @@ transferencia del bloque.
 💡Ejemplo 4.1 
 Vamos a ver como se soluciona los Diagramas de bloques conectados en cascada. 
 <div align="center">
-<img src="">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/0526dedb12a3b6472d2e4de0e1c1a433cf88ec94/Build/diagrama%20de%20bloques%20metodo%20de%20casacada%20.png">
 </div>
 
 Las ecuaciones que describen este sistema son:
@@ -71,3 +71,12 @@ Sustituyendo $Y_1(s)$ en la segunda ecuación, obtenemos:
 $$Y_2(s) = (U_1(s)G_1(s))G_2(s)$$
 
 $$Y_2(s) = U_1(s)G_1(s)G_2(s)$$
+
+💡Ejemplo 4.2
+Identificar los elementos de Sistema de la figura
+<div align="center">
+<img src="">
+</div>
+
+
+
