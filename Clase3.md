@@ -98,7 +98,7 @@ Los elementos  que podemos ver en el diagrama de bloques son:
 
 | Nº | Diagrama Original | Diagrama Simplificado | Regla de Simplificación |
 |----|-------------------|------------------------|--------------------------|
-| 1  | ![1a](ruta/a/tu/imagen1a.png) | ![1b](ruta/a/tu/imagen1b.png) | **Suma de señales:** `Y = U1 ± U2 ± U3` |
+| 1  | ![1a](img/diagrama1a.png) | ![1b](ruta/a/tu/imagen1b.png) | **Suma de señales:** `Y = U1 ± U2 ± U3` |
 | 2  | ![2a](ruta/a/tu/imagen2a.png) | ![2b](ruta/a/tu/imagen2b.png) | **Bloque único:** `Y = G·U` |
 | 3  | ![3a](ruta/a/tu/imagen3a.png) | ![3b](ruta/a/tu/imagen3b.png) | **Entrada común con bloques en paralelo:** `Y = G·U1 ± U2` |
 | 4  | ![4a](ruta/a/tu/imagen4a.png) | ![4b](ruta/a/tu/imagen4b.png) | **Sumador antes del bloque:** `Y = G·(U1 ± U2)` |
