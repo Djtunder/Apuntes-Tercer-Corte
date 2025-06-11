@@ -193,6 +193,14 @@ $$Y_1(s) = G_1 X_1(s) - G_2 X_1(s) = (G_1 - G_2) X_1(s)$$
 
 Anexo imagenes de los ejercicios 
 
+![Diagrama Inicial](img/diagrama_inicial.png)
+![Diagrama Reducido](img/diagrama_reducido.png)
+![Ejemplo](img/doble_retroalimentacion.png)
+
+## 9. Ejercicios
+
+
+
 
 
 
