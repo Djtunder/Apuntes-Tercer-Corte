@@ -56,13 +56,39 @@ Figura 3.2 "imagen de Flechas".
 </div>
    
 • 𝑃𝑘Ganancia de los caminos directos
-• Δ = 1 − (suma ganancias de los lazos) + (suma producto de 2
-lazos que no se tocan) – (suma producto de 3 lazos que no se
-tocan)+…
-• Δ𝑘 = 1 −(suma ganancias lazos que no toquen la trayectoria
-𝑃𝑘)+(suma ganancias 2 lazos que no toquen la trayectoria 𝑃𝑘 y
-no se toquen entre sí)-(suma ganancias 3 lazos que no toquen
+• Δ = 1 − (suma ganancias de los lazos) + (suma producto de 2lazos que no se tocan) – (suma producto de 3 lazos que no se tocan)+…
+• Δ𝑘 = 1 −(suma ganancias lazos que no toquen la trayectoria 𝑃𝑘)+(suma ganancias 2 lazos que no toquen la trayectoria 𝑃𝑘 y no se toquen entre sí)-(suma ganancias 3 lazos que no toquen
 la trayectoria 𝑃𝑘 y no se toquen entre sí)+…
+
+## 5. Ejemplos 
+Hallar la función de transferencia del siguiente diagrama señal
+
+Trayectoria directa
+
+$$\( P_1 = 1 \cdot 1 \cdot G_1 \cdot G_2 \cdot G_3 \cdot 1 = G_1 G_2 G_3 \)$$
+
+Lazos cerrados
+
+$$\( L_1 = G_1 G_2 H_1 \)$$
+
+$$\( L_2 = -G_2 G_3 H_2 \)$$
+
+$$\( L_3 = -G_1 G_2 G_3 \)$$
+
+$$\( \Delta = 1 - (L_1 + L_2 + L_3) \)$$
+
+$$\( \Delta = 1 - (G_1 G_2 H_1 - G_2 G_3 H_2 - G_1 G_2 G_3) \)$$
+
+Cofactor asociado a P1
+$$\( \Delta_1 = 1 \)$$
+
+Funcion de Transferencia
+
+$$\[\frac{C(s)}{R(s)} = \frac{P_1 \Delta_1}{\Delta} = \frac{G_1 G_2 G_3}{1 - G_1 G_2 H_1 + G_2 G_3 H_2 + G_1 G_2 G_3}\]$$
+
+Ejemplo 9.2
+
+
 
 
 
