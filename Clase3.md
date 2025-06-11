@@ -142,7 +142,7 @@ $$\frac{Y(s)}{X(s)} = \frac{G_1(s)}{1 - G_2(s) G_1(s)}$$
 
 ### Retroalimentación Negativa
 <div align="center">
-<img src="">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/3585ba518be16d67477681c772db7bd49ac4786b/img/lazo%20de%20retroalimentacion%20postivo.jpg">
 </div>
 
 Dado el sistema:
