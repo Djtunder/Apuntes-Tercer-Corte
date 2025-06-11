@@ -141,6 +141,9 @@ $$Y(s) \left( 1 - G_2(s) G_1(s) \right) = X(s) G_1(s)$$
 $$\frac{Y(s)}{X(s)} = \frac{G_1(s)}{1 - G_2(s) G_1(s)}$$
 
 ### Retroalimentación Negativa
+<div align="center">
+<img src="">
+</div>
 
 Dado el sistema:
 
@@ -163,6 +166,7 @@ $$Y(s) \left( 1 + G_2(s) G_1(s) \right) = X(s) G_1(s)$$
 **Función de transferencia:**
 
 $$\frac{Y(s)}{X(s)} = \frac{G_1(s)}{1 + G_2(s) G_1(s)}$$
+
 
 
 
