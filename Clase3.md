@@ -140,6 +140,29 @@ $$Y(s) \left( 1 - G_2(s) G_1(s) \right) = X(s) G_1(s)$$
 
 $$\frac{Y(s)}{X(s)} = \frac{G_1(s)}{1 - G_2(s) G_1(s)}$$
 
+### Retroalimentación Negativa
+
+Dado el sistema:
+
+$$E(s) = X(s) - Y_1(s)$$
+
+$$Y(s) = E(s) G_1(s)$$
+
+$$Y_1(s) = Y(s) G_2(s)$$
+
+Sustituyendo:
+
+$$Y(s) = \left( X(s) - Y(s) G_2(s) \right) G_1(s)$$
+
+$$Y(s) = X(s) G_1(s) - Y(s) G_2(s) G_1(s)$$
+
+$$Y(s) + Y(s) G_2(s) G_1(s) = X(s) G_1(s)$$
+
+$$Y(s) \left( 1 + G_2(s) G_1(s) \right) = X(s) G_1(s)$$
+
+**Función de transferencia:**
+
+$$\frac{Y(s)}{X(s)} = \frac{G_1(s)}{1 + G_2(s) G_1(s)}$$
 
 
 
