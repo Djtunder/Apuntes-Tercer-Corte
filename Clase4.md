@@ -86,7 +86,7 @@ Funcion de Transferencia
 
 $$\[\frac{C(s)}{R(s)} = \frac{P_1 \Delta_1}{\Delta} = \frac{G_1 G_2 G_3}{1 - G_1 G_2 H_1 + G_2 G_3 H_2 + G_1 G_2 G_3}\]$$
 
-Ejemplo 9.2
+Ejemplo 4.2
 
 <div align="center">
 <img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/e52af1b8b4e6e29ad89dd75fa03f0bf00b2b9a19/img/ejemplo%202.jpg" width="300">
@@ -131,12 +131,12 @@ $$\[\frac{C(s)}{R(s)} = \frac{1}{\Delta} \left( P_1 \Delta_1 + P_2 \Delta_2 + P_
 $$\[\frac{C(s)}{R(s)} = \frac{G_1 G_2 G_3 G_4 G_5 + G_1 G_6 G_4 G_5 + G_1 G_2 G_7 (1 + G_4 H_1)}{\Delta}\]$$
 
 
-## Ejercicios
+## 5. Ejercicios
 
 Obtener la funcion de transferencia, utilizando la formula de mazon del siguiente ejemplo.
-
-
-
+<div aqlign="center">+
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/c8eb7c1cc1183b623f43494cb552ee2d798c02cd/img/ejercicio%203.jpg" width="300">
+</div>
 ### Trayectoria directa
 
 $$\[P_1 = G_1 G_2 G_3\]$$
@@ -148,6 +148,8 @@ $$\[L_1 = -G_1 G_2 H_1\]$$
 $$\[L_2 = -G_2 G_3 H_2\]$$
 
 $$\[L_3 = -G_1 G_2 G_3\]$$
+
+
 
 ### Determinante
 
@@ -164,6 +166,60 @@ $$\[\Delta = 1 + G_1 G_2 H_1 + G_2 G_3 H_2 + G_1 G_2 G_3\]$$
 $$\[\frac{C(s)}{R(s)} = \frac{P_1 \Delta_1}{\Delta}\]$$
 
 $$\[\frac{C(s)}{R(s)} = \frac{G_1 G_2 G_3}{1 + G_1 G_2 H_1 + G_2 G_3 H_2 + G_1 G_2 G_3}\]$$
+
+Ejercicio 5.2
+Obtener la funcion de trasnferecnia de la siguuiente figura usando formula de mazon
+
+<div align="center">
+<img src="">
+</div>
+
+Solucion
+
+### Trayectorias directas
+
+\[P_1 = G_1 G_2 G_3 G_4 G_5\]
+
+
+### Lazos individuales
+
+\[L_1 = -G_1 G_2 H_1\]
+
+\[L_2 = -G_3 G_4 H_3\]
+
+\[L_3 = H_2\]
+
+---
+
+### Productos de lazos no tocantes
+
+No hay lazos no tocantes entre sí.
+
+---
+
+### Determinante
+
+\[\Delta = 1 - (L_1 + L_2 + L_3)\]
+
+\[\Delta = 1 + G_1 G_2 H_1 + G_3 G_4 H_3 - H_2\]
+
+### Cofactores
+
+Todos los lazos tocan la trayectoria directa, por tanto:
+
+\[\Delta_1 = 1\]
+
+### Función de transferencia
+
+\[\frac{Y(s)}{R(s)} = \frac{P_1 \Delta_1}{\Delta}\]
+
+\[\frac{Y(s)}{R(s)} = \frac{G_1 G_2 G_3 G_4 G_5}{1 + G_1 G_2 H_1 + G_3 G_4 H_3 - H_2}\]
+6.
+
+
+
+
+ 
 
 
 
