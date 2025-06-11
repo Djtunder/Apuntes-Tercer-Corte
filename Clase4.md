@@ -39,6 +39,30 @@ Figura 3.2 "imagen de Flechas".
 
 ## interpretación de Diagramas de bloques de señal.
 
+<div align="center">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/7dffd7b0752cf8d16bde70399e434d7c9a1be4aa/img/tabla%20de%20interpretacion%20de%20diagramas%20de%20se%C3%B1al..jpg" width="300">
+</div>
+
+3.4 Ganancia de lazo: La ganancia de lazo es el producto de las ganancias de ramas de lazo.
+
+3.5 Trayecto o cmaino directo: Trayecto directo es el camino  o trayecto de un nodo de entrada a un nodo de salida, sin cruzar ningún nodo más de una vez. 
+
+3.6 Lazo: Un lazo es un trayecto o camino cerrado.
+
+## 4. Formula de Mason
+
+
+   
+• 𝑃𝑘Ganancia de los caminos directos
+• Δ = 1 − (suma ganancias de los lazos) + (suma producto de 2
+lazos que no se tocan) – (suma producto de 3 lazos que no se
+tocan)+…
+• Δ𝑘 = 1 −(suma ganancias lazos que no toquen la trayectoria
+𝑃𝑘)+(suma ganancias 2 lazos que no toquen la trayectoria 𝑃𝑘 y
+no se toquen entre sí)-(suma ganancias 3 lazos que no toquen
+la trayectoria 𝑃𝑘 y no se toquen entre sí)+…
+
+
 
 
 
