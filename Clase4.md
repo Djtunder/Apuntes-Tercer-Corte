@@ -136,6 +136,7 @@ $$\[\frac{C(s)}{R(s)} = \frac{G_1 G_2 G_3 G_4 G_5 + G_1 G_6 G_4 G_5 + G_1 G_2 G_
 Obtener la funcion de transferencia, utilizando la formula de mazon del siguiente ejemplo.
 
 
+
 ### Trayectoria directa
 
 $$\[P_1 = G_1 G_2 G_3\]$$
