@@ -130,8 +130,62 @@ $$\[\frac{C(s)}{R(s)} = \frac{1}{\Delta} \left( P_1 \Delta_1 + P_2 \Delta_2 + P_
 
 $$\[\frac{C(s)}{R(s)} = \frac{G_1 G_2 G_3 G_4 G_5 + G_1 G_6 G_4 G_5 + G_1 G_2 G_7 (1 + G_4 H_1)}{\Delta}\]$$
 
+## 6. Tabla: Elementos y Reglas de los Diagramas de Flujo de Señal
 
-## 5. Ejercicios
+| **Elemento**          | **Símbolo / Forma**           | **Descripción**                                                                 |
+|-----------------------|-------------------------------|---------------------------------------------------------------------------------|
+| **Nodo**              | Punto o círculo               | Representa una señal o variable del sistema.                                   |
+| **Rama (arco)**       | Flecha con ganancia (ej: G(s))| Indica la relación funcional entre dos nodos. Multiplica la señal de entrada.  |
+| **Fuente de entrada** | Nodo R(s)                     | Señal de entrada al sistema.                                                   |
+| **Salida del sistema**| Nodo C(s)                     | Señal de salida del sistema.                                                   |
+| **Ganancia**          | Etiqueta sobre la flecha      | Puede ser una constante, G(s), H(s), etc.                                      |
+| **Suma de señales**   | Nodo con varias entradas      | Suma algebraica de las señales que llegan.                                     |
+| **Retroalimentación** | Flecha que regresa a un nodo  | Representa un lazo de realimentación.                                          |
+
+
+## 7. Ecuaciones## 📘 Fórmula de Mason para Diagramas de Flujo de Señal
+
+Sea la función de transferencia de un sistema representado por un diagrama de flujo de señal:
+
+$$\[T = \frac{Y(s)}{X(s)} = \frac{\sum_{k=1}^{n} P_k \Delta_k}{\Delta}\]$$
+
+### 📌 Donde:
+
+- \( P_k \): Ganancia de la k-ésima trayectoria directa desde la entrada hasta la salida.
+- \( \Delta \): Determinante del sistema (considerando todos los lazos).
+- \( \Delta_k \): Determinante del sistema excluyendo los lazos que tocan la trayectoria \( P_k \).
+
+---
+
+### 🔄 Cálculo del determinante \( \Delta \):
+
+$$\[\Delta = 1 - \sum (\text{lazos individuales}) + \sum (\text{productos de dos lazos no tocantes}) - \sum (\text{productos de tres lazos no tocantes}) + \cdots\]$$
+
+### ✅ Pasos para aplicar la fórmula:
+
+1. Identificar todas las trayectorias directas \( P_k \).
+2. Identificar todos los lazos del sistema.
+3. Calcular \( \Delta \) considerando la interacción de los lazos.
+4. Calcular \( \Delta_k \) para cada trayectoria.
+5. Sustituir los valores en la fórmula de Mason.
+
+---
+
+### 📌 Ejemplo básico:
+
+Supongamos:
+- Una trayectoria directa: \( P_1 = G_1 G_2 \)
+- Un lazo: \( L_1 = -H G_2 \)
+
+Entonces:
+
+$$\[\Delta = 1 - (-HG_2) = 1 + HG_2\]$$
+
+$$\[\Delta_1 = 1 \quad \text{(ya que el lazo toca la trayectoria directa)}\]$$
+
+$$\[T = \frac{P_1 \Delta_1}{\Delta} = \frac{G_1 G_2}{1 + H G_2}\]$$
+
+## 8. Ejercicios
 
 Obtener la funcion de transferencia, utilizando la formula de mazon del siguiente ejemplo.
 <div aqlign="center">+
@@ -148,8 +202,6 @@ $$\[L_1 = -G_1 G_2 H_1\]$$
 $$\[L_2 = -G_2 G_3 H_2\]$$
 
 $$\[L_3 = -G_1 G_2 G_3\]$$
-
-
 
 ### Determinante
 
@@ -171,7 +223,7 @@ Ejercicio 5.2
 Obtener la funcion de trasnferecnia de la siguuiente figura usando formula de mazon
 
 <div align="center">
-<img src="">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/0c36ccdadf44d29106fe096648101734146d16bc/img/ejercicio%204.jpg" width="300">
 </div>
 
 Solucion
@@ -214,12 +266,36 @@ Todos los lazos tocan la trayectoria directa, por tanto:
 \[\frac{Y(s)}{R(s)} = \frac{P_1 \Delta_1}{\Delta}\]
 
 \[\frac{Y(s)}{R(s)} = \frac{G_1 G_2 G_3 G_4 G_5}{1 + G_1 G_2 H_1 + G_3 G_4 H_3 - H_2}\]
-6.
 
+## 9. Codigo
 
+💡Ejemplo 4:
 
+% Aplicación de la fórmula de Mason en un sistema sencillo
+% Trayectoria directa: P1 = G1 * G2
+% Lazo: L1 = -H * G2
+
+G1 = 2;     % Ganancia del bloque 1
+G2 = 3;     % Ganancia del bloque 2
+H  = 0.5;   % Ganancia de retroalimentación
+
+P1 = G1 * G2;           % Ganancia de la trayectoria directa
+L1 = -H * G2;           % Ganancia del lazo
+Delta = 1 - L1;         % Determinante del sistema
+
+T = P1 / Delta;         % Fórmula de Mason
+
+disp(['La función de transferencia es: T = ', num2str(T)]);
+
+# 10. Conclusiones
+1. Aprendimos que los diagramas de flujo de señal permiten representar gráficamente las relaciones funcionales entre las variables de un sistema dinámico.
+2. Los Diagramas de señal Ayudan a entender cómo fluye la información desde la entrada hasta la salida, especialmente en sistemas con retroalimentación
 
  
+# 11. Referencias
+[1] Autor desconocido, Dinámica de sistemas, Jul. 2017. [En línea]. Disponible en: https://dademuchconnection.wordpress.com/wp-content/uploads/2017/07/dinamica_de_sistemas.pdf
+
+ Jorge Cote.(2025). Clase 4: Diagramas de flujo de señal [Diapositivas de clase]. Curso Dinámica de Sistemas, ETITC.
 
 
 
