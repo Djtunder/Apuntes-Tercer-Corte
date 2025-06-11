@@ -120,21 +120,21 @@ Dado un sistema con retroalimentación positiva:
 
 ### 📐 Ecuaciones del sistema:
 
-$$\[E(s) = X(s) + Y_1(s)\]$$
+$$E(s) = X(s) + Y_1(s)$$
 
-$$\[Y(s) = E(s) \cdot G_1(s)\]$$
+$$Y(s) = E(s) \cdot G_1(s)$$
 
-$$\[Y_1(s) = Y(s) \cdot G_2(s)\]$$
+$$Y_1(s) = Y(s) \cdot G_2(s)$$
 
 Sustituyendo:
 
-$$\[Y(s) = \left( X(s) + Y_1(s) \right) G_1(s)\]$$
+$$Y(s) = \left( X(s) + Y_1(s) \right) G_1(s)$$
 
-$$\[Y(s) = \left( X(s) + Y(s) G_2(s) \right) G_1(s)\]$$
+$$Y(s) = \left( X(s) + Y(s) G_2(s) \right) G_1(s)$$
 
-$$\[Y(s) = X(s) G_1(s) + Y(s) G_2(s) G_1(s)\]$$
+$$Y(s) = X(s) G_1(s) + Y(s) G_2(s) G_1(s)$$
 
-$$\[Y(s) \left( 1 - G_2(s) G_1(s) \right) = X(s) G_1(s)\]$$
+$$Y(s) \left( 1 - G_2(s) G_1(s) \right) = X(s) G_1(s)$$
 
 ## ✅ Función de transferencia del sistema:
 
