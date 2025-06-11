@@ -92,20 +92,56 @@ Los elementos  que podemos ver en el diagrama de bloques son:
 <img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/c8a67ffbe690da7dc9bf84b01c7959b182328210/Build/aplicacion%20de%20sistemas%20termicos.png" width="300">
 </div>
 
-6. Tabla de las Reglas de Aplicacion
+## 6. Tabla de las Reglas de Aplicacion
 
 # Reglas de Simplificación de Diagramas de Bloques
 
 | Nº | Diagrama Original | Diagrama Simplificado | Regla de Simplificación |
 |----|-------------------|------------------------|--------------------------|
-| 1  | ![1a](img/diagrama1a.png) | ![1b](ruta/a/tu/imagen1b.png) | **Suma de señales:** `Y = U1 ± U2 ± U3` |
-| 2  | ![2a](ruta/a/tu/imagen2a.png) | ![2b](ruta/a/tu/imagen2b.png) | **Bloque único:** `Y = G·U` |
-| 3  | ![3a](ruta/a/tu/imagen3a.png) | ![3b](ruta/a/tu/imagen3b.png) | **Entrada común con bloques en paralelo:** `Y = G·U1 ± U2` |
-| 4  | ![4a](ruta/a/tu/imagen4a.png) | ![4b](ruta/a/tu/imagen4b.png) | **Sumador antes del bloque:** `Y = G·(U1 ± U2)` |
-| 5  | ![5a](ruta/a/tu/imagen5a.png) | ![5b](ruta/a/tu/imagen5b.png) | **Retroalimentación directa:** `Y = Y1` |
-| 6  | ![6a](ruta/a/tu/imagen6a.png) | ![6b](ruta/a/tu/imagen6b.png) | **Retroalimentación unitaria negativa:** `Y = U / (1 + G)` |
-| 7  | ![7a](ruta/a/tu/imagen7a.png) | ![7b](ruta/a/tu/imagen7b.png) | **Bloques en serie:** `Y = G1·G2·U` |
-| 8  | ![8a](ruta/a/tu/imagen8a.png) | ![8b](ruta/a/tu/imagen8b.png) | **Bloques en paralelo:** `Y = (G1 ± G2)·U` |
+| 1  | ![1a](img/diagrama1a.png) | ![1b](img/diagrama1b.png) | **Suma de señales:** `Y = U1 ± U2 ± U3` |
+| 2  | ![2a](img/diagrama2a.png) | ![2b](img/diagrama2b.png) | **Bloque único:** `Y = G·U` |
+| 3  | ![3a](img/diagrama3a.png) | ![3b](img/diagrama3b.png) | **Entrada común con bloques en paralelo:** `Y = G·U1 ± U2` |
+| 4  | ![4a](img/diagrama4a.png) | ![4b](img/diagrama4b.png) | **Sumador antes del bloque:** `Y = G·(U1 ± U2)` |
+| 5  | ![5a](img/diagrama5a.png) | ![5b](img/diagrama5b.png) | **Retroalimentación directa:** `Y = Y1` |
+| 6  | ![6a](img/diagrama6a.png) | ![6b](img/diagrama6b.png) | **Retroalimentación unitaria negativa:** `Y = U / (1 + G)` |
+| 7  | ![7a](img/diagrama7a.png) | ![7b](img/diagrama7b.png) | **Bloques en serie:** `Y = G1·G2·U` |
+| 8  | ![8a](img/diagrama8a.png) | ![8b](img/diagrama8b.png) | **Bloques en paralelo:** `Y = (G1 ± G2)·U` |
+
+## 7. Ecuaciones de Lazo de Retroalimentacion positivo
+
+## 🔁 Retroalimentación Positiva
+
+Dado un sistema con retroalimentación positiva:
+
+- \( X(s) \): Entrada del sistema  
+- \( Y(s) \): Salida del sistema  
+- \( G_1(s) \): Función de transferencia directa  
+- \( G_2(s) \): Función de transferencia en la retroalimentación  
+
+### 📐 Ecuaciones del sistema:
+
+$$\[E(s) = X(s) + Y_1(s)\]$$
+
+$$\[Y(s) = E(s) \cdot G_1(s)\]$$
+
+$$\[Y_1(s) = Y(s) \cdot G_2(s)\]$$
+
+Sustituyendo:
+
+$$\[Y(s) = \left( X(s) + Y_1(s) \right) G_1(s)\]$$
+
+$$\[Y(s) = \left( X(s) + Y(s) G_2(s) \right) G_1(s)\]$$
+
+$$\[Y(s) = X(s) G_1(s) + Y(s) G_2(s) G_1(s)\]$$
+
+$$\[Y(s) \left( 1 - G_2(s) G_1(s) \right) = X(s) G_1(s)\]$$
+
+## ✅ Función de transferencia del sistema:
+
+$$\frac{Y(s)}{X(s)} = \frac{G_1(s)}{1 - G_2(s) G_1(s)}$$
+
+
+
 
 
 
