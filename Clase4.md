@@ -15,7 +15,7 @@ Los diagramas de flujo de señales permiten representar de forma clara sistemas 
 <div align="center">
 <img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/75f830ff974a1ed7a184f5cf5310053ee5d706ee/img/nodos%2011.jpg">
 </div>
-
+Figura 3.1 "imagen de Nodos"
 3.2 Flecha: Representa la relación entre las variables del sistema
 
 • Se representa por medio de flechas que indicando el sentido de la relación
@@ -27,7 +27,19 @@ de salida (Nodo).
 transferencia que relaciona la entrada y la salida.
 
 <div align="center">
-<img src="">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/dc6e984cd414ce1c38dcc6ab0dded379d466ad9a/img/flechas.jpg">
 </div>
+Figura 3.2 "imagen de Flechas".
+
+3.3 Camino o trayectoria: Camino o trayecto es un recorrido de ramas conectadas en el sentido de las flechas de las ramas.
+
+• Si no se cruza ningún nodo más de una vez, el camino o trayecto es abierto.
+
+• Si el camino o trayecto finaliza en el mismo nodo del cual partió, y no cruza ningún otro más de una vez, es un camino o trayecto cerrado.
+
+## interpretación de Diagramas de bloques de señal.
+
+
+
 
 
