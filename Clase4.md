@@ -51,7 +51,9 @@ Figura 3.2 "imagen de Flechas".
 
 ## 4. Formula de Mason
 
-
+<div align="center">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/7c09d6aac0c19f6bfc58b189310fb1f4a4375b51/img/formula%20de%20mason%20.jpg" width="300">
+</div>
    
 • 𝑃𝑘Ganancia de los caminos directos
 • Δ = 1 − (suma ganancias de los lazos) + (suma producto de 2
