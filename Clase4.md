@@ -13,7 +13,7 @@ Los diagramas de flujo de señales permiten representar de forma clara sistemas 
 3.1 Nodo: Representan las señales de entrada o salida del Sistema.Se representa por medio de un círculo con una etiqueta que indique el nombre de la señal.
 
 <div align="center">
-<img src="">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/75f830ff974a1ed7a184f5cf5310053ee5d706ee/img/nodos%2011.jpg">
 </div>
 
 3.2 Flecha: Representa la relación entre las variables del sistema
@@ -26,5 +26,8 @@ de salida (Nodo).
 • Se agrega una etiqueta a la flecha para indicar la función de
 transferencia que relaciona la entrada y la salida.
 
+<div align="center">
+<img src="">
+</div>
 
 
