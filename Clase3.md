@@ -111,6 +111,10 @@ Los elementos  que podemos ver en el diagrama de bloques son:
 
 ## 🔁 Retroalimentación Positiva
 
+<div align="center">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/98e0a8c0bcdd2f12f90c7bf7069349bb536b6706/img/lazo%20de%20retroalimentacion%20positivo%202.jpg" width="300">
+</div>
+
 Dado un sistema con retroalimentación positiva:
 
 - \( X(s) \): Entrada del sistema  
@@ -167,6 +171,27 @@ $$Y(s) \left( 1 + G_2(s) G_1(s) \right) = X(s) G_1(s)$$
 
 $$\frac{Y(s)}{X(s)} = \frac{G_1(s)}{1 + G_2(s) G_1(s)}$$
 
+## 8. Reducción de Diagramas
+
+$$Y_1(s) = G_1 X_1(s) - G_2 X_1(s) = (G_1 - G_2) X_1(s)$$
+
+$$Y_3(s) = G_3 Y_1(s) = G_3 (G_1 - G_2) X_1(s)$$
+
+$$Y_2(s) = G_4 X_2(s) - X_2(s) = (G_4 - 1) X_2(s)$$
+
+$$Y(s) = Y_3(s) + Y_2(s) = G_3 (G_1 - G_2) X_1(s) + (G_4 - 1) X_2(s)$$
+
+$$\frac{Y(s)}{X_1(s)} = G_3 (G_1 - G_2)$$
+
+$$\frac{Y(s)}{X_2(s)} = G_4 - 1$$
+
+$$\frac{C(s)}{R(s)} = \frac{G}{1 + G H_2} \cdot \frac{1}{1 + \frac{G}{1 + G H_2} H_1}$$
+
+$$\Rightarrow \frac{C(s)}{R(s)} = \frac{G}{1 + G H_1 + G H_2}$$
+
+$$Y_1(s) = G_1 X_1(s) - G_2 X_1(s) = (G_1 - G_2) X_1(s)$$
+
+Anexo imagenes de los ejercicios 
 
 
 
