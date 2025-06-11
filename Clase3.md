@@ -92,3 +92,21 @@ Los elementos  que podemos ver en el diagrama de bloques son:
 <img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/c8a67ffbe690da7dc9bf84b01c7959b182328210/Build/aplicacion%20de%20sistemas%20termicos.png" width="300">
 </div>
 
+6. Tabla de las Reglas de Aplicacion
+
+# Reglas de Simplificación de Diagramas de Bloques
+
+| Nº | Diagrama Original | Diagrama Simplificado | Regla de Simplificación |
+|----|-------------------|------------------------|--------------------------|
+| 1  | ![1a](ruta/a/tu/imagen1a.png) | ![1b](ruta/a/tu/imagen1b.png) | **Suma de señales:** `Y = U1 ± U2 ± U3` |
+| 2  | ![2a](ruta/a/tu/imagen2a.png) | ![2b](ruta/a/tu/imagen2b.png) | **Bloque único:** `Y = G·U` |
+| 3  | ![3a](ruta/a/tu/imagen3a.png) | ![3b](ruta/a/tu/imagen3b.png) | **Entrada común con bloques en paralelo:** `Y = G·U1 ± U2` |
+| 4  | ![4a](ruta/a/tu/imagen4a.png) | ![4b](ruta/a/tu/imagen4b.png) | **Sumador antes del bloque:** `Y = G·(U1 ± U2)` |
+| 5  | ![5a](ruta/a/tu/imagen5a.png) | ![5b](ruta/a/tu/imagen5b.png) | **Retroalimentación directa:** `Y = Y1` |
+| 6  | ![6a](ruta/a/tu/imagen6a.png) | ![6b](ruta/a/tu/imagen6b.png) | **Retroalimentación unitaria negativa:** `Y = U / (1 + G)` |
+| 7  | ![7a](ruta/a/tu/imagen7a.png) | ![7b](ruta/a/tu/imagen7b.png) | **Bloques en serie:** `Y = G1·G2·U` |
+| 8  | ![8a](ruta/a/tu/imagen8a.png) | ![8b](ruta/a/tu/imagen8b.png) | **Bloques en paralelo:** `Y = (G1 ± G2)·U` |
+
+
+
+
