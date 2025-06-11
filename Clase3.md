@@ -199,6 +199,42 @@ Anexo imagenes de los ejercicios
 
 ## 9. Ejercicios
 
+<div align="center">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/0c7071e206a48a2b24991ef75a27d05eabb59d26/img/ejercicio%201%20funcion%20de%20trasnferencia.jpg" width="300">
+</div>
+
+Solucion
+
+Con respecto al valor inicial de la señal se puede observar que sobra $G_1$ en el último sumando. Para resolver esto se dividirá el bloque $H_2$ entre $G_1$.
+
+![Diagrama de bloques original](Img/image_4ba9c2.png)
+
+Resolviendo el bucle interno:
+
+$$M_1(s) = \frac{G_1 G_2}{1 - G_1 G_2 H_1}$$
+
+Con lo que el diagrama de bloques ahora será:
+
+![Diagrama de bloques simplificado 1](Img/image_4ba980.png)
+
+Resolviendo el lazo interno entre a y c:
+
+$$M_2(s) = \frac{\frac{G_1 G_2 G_3}{1 - G_1 G_2 H_1}}{1 + \frac{G_1 G_2 G_3}{1 - G_1 G_2 H_1} \cdot \frac{H_2}{G_1}} = \frac{G_1 G_2 G_3}{1 - G_1 G_2 H_1 + G_2 G_3 H_2}$$
+
+Y resolviendo el último lazo:
+
+![Diagrama de bloques simplificado 2](Img/image_4ba699.png)
+
+$$M_3(s) = \frac{\frac{G_1 G_2 G_3}{1 - G_1 G_2 H_1 + G_2 G_3 H_2}}{1 + \frac{G_1 G_2 G_3}{1 - G_1 G_2 H_1 + G_2 G_3 H_2}} = \frac{G_1 G_2 G_3}{1 - G_1 G_2 H_1 + G_2 G_3 H_2 + G_1 G_2 G_3}$$
+
+Este es el diagrama de bloques final:
+
+![Diagrama de bloques final](Img/image_final.png)
+
+## 9.2 Ejercicio
+
+
+
 
 
 
