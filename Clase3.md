@@ -233,9 +233,97 @@ Este es el diagrama de bloques final:
 
 ## 9.2 Ejercicio
 
+<div align="center">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/a18305cb52a0d191b46af808b5e8953a9984b867/img/ejercicio%202.jpg" width="300">
+</div>
+
+Solución
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx} % Necesario para incluir imágenes
+
+\title{Solución de Función de Transferencia por Diagrama de Bloques}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Img/image_4ba9c2.png}
+    \caption{Diagrama de bloques original}
+    \label{fig:original}
+\end{figure}
+
+Resolviendo el bucle interno:
+$$
+M_1(s) = \frac{G_1 G_2}{1 - G_1 G_2 H_1}
+$$
+
+Con lo que el diagrama de bloques ahora será:
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Img/image_4ba980.png}
+    \caption{Diagrama de bloques simplificado 1}
+    \label{fig:simplified1}
+\end{figure}
+
+Resolviendo el lazo interno entre a y c:
+$$
+M_2(s) = \frac{\frac{G_1 G_2 G_3}{1 - G_1 G_2 H_1}}{1 + \frac{G_1 G_2 G_3}{1 - G_1 G_2 H_1} \cdot \frac{H_2}{G_1}} = \frac{G_1 G_2 G_3}{1 - G_1 G_2 H_1 + G_2 G_3 H_2}
+$$
+
+Y resolviendo el último lazo:
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Img/image_4ba699.png}
+    \caption{Diagrama de bloques simplificado 2}
+    \label{fig:simplified2}
+\end{figure}
+
+$$
+M_3(s) = \frac{\frac{G_1 G_2 G_3}{1 - G_1 G_2 H_1 + G_2 G_3 H_2}}{1 + \frac{G_1 G_2 G_3}{1 - G_1 G_2 H_1 + G_2 G_3 H_2}} = \frac{G_1 G_2 G_3}{1 - G_1 G_2 H_1 + G_2 G_3 H_2 + G_1 G_2 G_3}
+$$
+
+Este es el diagrama de bloques final:
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.4\textwidth]{Img/image_final.png} % Asegúrate de que esta imagen exista o quita esta sección
+    \caption{Diagrama de bloques final}
+    \label{fig:final}
+\end{figure}
+
+\section*{Solución del segundo Diagrama de Bloques}
+
+Para el segundo diagrama de bloques, la función de transferencia $\frac{C(s)}{R(s)}$ se obtiene por reducción de bloques como sigue:
+$$
+\frac{C(s)}{R(s)} = \frac{G_1 G_2 G_3}{1 + G_2 H_1 + G_2 H_2 + G_1 G_2 G_3 H_3}
+$$
+
+\end{document}
+
+## 10. Conclusiones
+
+Se ha comprendido y aplicado una metodología sistemática para simplificar diagramas de bloques complejos, resolviendo lazos internos paso a paso y combinando bloques en serie para obtener la función de transferencia 
+
+la identificación y aplicación de fórmulas específicas para lazos de retroalimentación y la combinación de bloques en serie para obtener una representación simplificada.
+
+## 11. Referencias
+
+Modern Control Engineering, Katsuhiko Ogata, Second Edition.
+Jorge Eduardo Cote , Algebra de Bloques ETTIC 
 
 
 
+
+ 
 
 
 
