@@ -29,7 +29,7 @@ El álgebra de bloques es una herramienta esencial en la Dinámica de Sistemas p
 3.22 🔑 Flechas: La función principal de una flecha es mostrar el sentido en el que una señal se propaga de un componente a otro. Esto es crucial para entender la causa y efecto dentro del sistema. La señal solo puede ir en la dirección que la flecha indica, nunca en sentido contrario.
 
 <div align="center">
-<img src="" width="300">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/8b57cc97aabfd26f219b13d259fdb2acd7fc25cc/img/flechas.png" width="300">
 </div>
 
 3.23 🔑Punto Suma: En el álgebra de bloques, este elemento se encarga de combinar señales, ya sea añadiéndolas o sustrayéndolas. Cada flecha que llega a este punto lleva un signo (+ o −) en su origen, indicando la operación específica que debe realizarse con la señal que transporta (sumar o restar, respectivamente).
