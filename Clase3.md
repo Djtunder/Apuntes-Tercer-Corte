@@ -35,7 +35,7 @@ El álgebra de bloques es una herramienta esencial en la Dinámica de Sistemas p
 3.23 🔑Punto Suma: En el álgebra de bloques, este elemento se encarga de combinar señales, ya sea añadiéndolas o sustrayéndolas. Cada flecha que llega a este punto lleva un signo (+ o −) en su origen, indicando la operación específica que debe realizarse con la señal que transporta (sumar o restar, respectivamente).
 
 <div align="center">
-<img src="">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/0d94c765152dec505490d56052266851b39dc4a3/img/punto%20suma.jpg" width="300">
 </div>
 
 3.24 🔑 Ramificación: Un punto de ramificación es aquel a partir del cual la señal de un bloque va de modo concurrente a otros bloques o puntos de suma.
