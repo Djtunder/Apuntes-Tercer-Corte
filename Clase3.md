@@ -29,7 +29,7 @@ El álgebra de bloques es una herramienta esencial en la Dinámica de Sistemas p
 3.22 🔑 Flechas: La función principal de una flecha es mostrar el sentido en el que una señal se propaga de un componente a otro. Esto es crucial para entender la causa y efecto dentro del sistema. La señal solo puede ir en la dirección que la flecha indica, nunca en sentido contrario.
 
 <div align="center">
-<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/c785325c5a01d638142fdca9b2ffc2dc2599712b/img/punto%20suma.jpg" width="300">
+<img src="" width="300">
 </div>
 
 3.23 🔑Punto Suma: En el álgebra de bloques, este elemento se encarga de combinar señales, ya sea añadiéndolas o sustrayéndolas. Cada flecha que llega a este punto lleva un signo (+ o −) en su origen, indicando la operación específica que debe realizarse con la señal que transporta (sumar o restar, respectivamente).
@@ -41,7 +41,7 @@ El álgebra de bloques es una herramienta esencial en la Dinámica de Sistemas p
 3.24 🔑 Ramificación: Un punto de ramificación es aquel a partir del cual la señal de un bloque va de modo concurrente a otros bloques o puntos de suma.
 
 <div align="center">
-<img src="">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/b2acc7f8d4d8f8c356ed63f214b934c07c0f58ec/img/ramificacion.jpg" width="300">
 </div>
 
 3.25  🔑 Interpretacion del Diagrama 
