@@ -408,9 +408,7 @@ $$
 
 # 6.3 Sistema de Poleas y Engranajes
 
-$$
-G(s) = \frac{\Theta_o(s)}{\Theta_i(s)} = \frac{K \left( \frac{N_1}{N_2} \right)^2}{J s^2 + b s + k}
-$$
+$$G(s) = \frac{\Theta_o(s)}{\Theta_i(s)} = \frac{K \left( \frac{N_1}{N_2} \right)^2}{J s^2 + b s + k}$$
 
 - \( \Theta_o(s), \Theta_i(s) \): ángulos de salida y entrada  
 - \( N_1:N_2 \): relación de engranajes  
@@ -443,6 +441,7 @@ $$
 
 
 ## 7. Tablas
+
 | **Sistema**           | **Ecuación Representativa**                                                             | **Función de Transferencia** $G(s)$                                     | **Descripción**                                                        |
 | --------------------- | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | **Selenoide**         | $F = k \cdot i^2$ o modelo LR: $V = L\frac{di}{dt} + Ri$                                | $G(s) = \frac{I(s)}{V(s)} = \frac{1}{Ls + R}$                           | Actúa como actuador lineal, convierte corriente en fuerza lineal.      |
@@ -451,8 +450,8 @@ $$
 | **Tacómetro**         | $V_{out} = K_t \cdot \omega$                                                            | $G(s) = \frac{V_{out}(s)}{\Omega(s)} = K_t$                             | Transforma velocidad angular en voltaje.                               |
 | **Potenciómetro**     | $V_{out} = V_{in} \cdot \frac{R_{ajustado}}{R_{total}}$                                 | $G(s) = \frac{V_{out}(s)}{V_{in}(s)} = \text{constante}$                | Dispositivo pasivo que divide voltaje.                                 |
 
-## 6.1Descripcion de las Varuables de la Tabla
-s es la variable de Laplace.
+## 7.1 Descripcion de las Varuables de la Tabla
+s : es la variable de Laplace.
 L: inductancia, 
 R: resistencia.
 𝐾𝑡: constante de torque, 
@@ -463,7 +462,9 @@ b: fricción viscosa.
 C: capacidad térmica, 
 h: coeficiente de pérdida de calor.
 
-## 📚 7.1 Ejercicios
+## 8. Ejercicios
+
+## 📚 8.1 Ejercicios
 
 Obtenga el circuito equivalente y la función de transferencia resultante para el sistema mostrado en la i gura 3.27, para lo que hay que considerar:
 
@@ -511,7 +512,7 @@ $\( s \)$ es la variable de Laplace
 
 Esta función representa un sistema de segundo orden sin constante de rigidez (sin muelle).
 
-# 📚 Ejercicio 7.2  
+# 📚 Ejercicio 8.2  
 Los engranes y las bandas que están sobre una polea son dispositivos mecánicos que transmiten energía desde una parte del sistema a otra, en una forma tal que se alteran la
 fuerza, el par, la velocidad y el desplazamiento angular. La Figura 5.11 ilustra dos engranes acoplados; la inercia y la fricción de los engranes se despreciarán momentáneamente en
 el caso ideal considerado. 
@@ -522,7 +523,12 @@ el caso ideal considerado.
 
 #Relaciones entre los torques τ₁ y τ₂, los desplazamientos angulares θ₁ y θ₂, y los números de dientes N₁ y N₂ de los engranes son:
 
-### Relaciones entre los torques \( \tau_1 \) y \( \tau_2 \), los desplazamientos angulares \( \theta_1 \) y \( \theta_2 \), y los números de dientes \( N_1 \) y \( N_2 \) de los engranes son:
+### Relaciones entre los torques
+$$\( \tau_1 \) y \( \tau_2 \), los desplazamientos angulares \( \theta_1 \) y \( \theta_2 \), y los números de dientes de los engranajes \( N_1 \) y \( N_2 \):$$
+
+$$\[\frac{\tau_1}{\tau_2} = \frac{N_2}{N_1}, \quad \frac{\theta_1}{\theta_2} = \frac{N_1}{N_2}\]$$
+
+engranes son:
 
 $$[\frac{\tau_2}{\tau_1} = \frac{N_2}{N_1}, \quad \frac{N_2}{N_1} = -\frac{\theta_1}{\theta_2}]$$
 
@@ -594,7 +600,7 @@ $$[J_{equiv} = \left[J_{N1}+\left(\frac{N_1}{N_2}\right)^2 (J+J_{N2})\right]$$
  Función de transferencia G(s) de la cuarta imagen
 $$[G(s) = \frac{\Theta(s)}{T(s)} = \frac{1}{s(J_{equiv}s + \beta_{equiv})}]$$
 
-## 8. Codigo en Matlab
+## 9. Codigo en Matlab
 
 % Parámetros del sistema
 
@@ -642,13 +648,13 @@ Vamos a mostrar la grafica del comportamiento del sistema.
 <img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/5709eaeb9ce4d894787fe74e8276981026d1ff36/Build/respuesta%20Escalonda%20al%20sistema%20.png">
 </div>
 
-## 9. Conslusiones
+## 10. Conslusiones
 
-9.1 Aprendimos que El modelamiento de sistemas como solenoides, motores DC, engranajes y poleas permite representar fenómenos mecánicos, eléctricos y electromecánicos bajo un mismo marco matemático utilizando funciones de transferencia. Esto facilita el análisis, diseño y control de sistemas complejos mediante herramientas de la teoría de sistemas lineales.
+10.1 Aprendimos que El modelamiento de sistemas como solenoides, motores DC, engranajes y poleas permite representar fenómenos mecánicos, eléctricos y electromecánicos bajo un mismo marco matemático utilizando funciones de transferencia. Esto facilita el análisis, diseño y control de sistemas complejos mediante herramientas de la teoría de sistemas lineales.
 
-9.2 Analizando la grafica, pudimos observar que La simulación de la respuesta del sistema solenoide-masa ante una entrada escalón muestra una curva suavemente creciente, lo que indica un comportamiento de segundo orden subamortiguado o críticamente amortiguado. Este tipo de respuesta refleja que el sistema responde de forma estable pero con una velocidad limitada por la fricción mecánica y el efecto de la contraelectromotriz. A medida que el tiempo avanza, la posición tiende a un valor constante, demostrando que el sistema alcanza un estado estacionario sin oscilaciones, ideal para aplicaciones que requieren precisión y estabilidad.
+10.2 Analizando la grafica, pudimos observar que La simulación de la respuesta del sistema solenoide-masa ante una entrada escalón muestra una curva suavemente creciente, lo que indica un comportamiento de segundo orden subamortiguado o críticamente amortiguado. Este tipo de respuesta refleja que el sistema responde de forma estable pero con una velocidad limitada por la fricción mecánica y el efecto de la contraelectromotriz. A medida que el tiempo avanza, la posición tiende a un valor constante, demostrando que el sistema alcanza un estado estacionario sin oscilaciones, ideal para aplicaciones que requieren precisión y estabilidad.
 
-## 10. Referencias
+## 11. Referencias
 
 Jorge Eduardo Cote Ballesteros. (2025). Modelamiento de Sistemas Complejos ETITC.
 
