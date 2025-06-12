@@ -280,7 +280,12 @@ Grafica de la respuesta del sistema
 <img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/3ba657f124ae053440b1d027373cd74652c92f80/img/respuesta%20del%20sistema.jpg">
 </div>
 
-Diagrama de Bloques Simulink
+Diagrama de Bloques 
+
+<div align="center">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/3690bd35245f638fc6a92e3a92e41521e7378b32/img/diagrama%20de%20bloques%20matlab.jpg" width="300">
+</div>
+
 
 
 ## 10. Conclusiones
