@@ -1,7 +1,7 @@
 # Nombre: Kevin Nicolas Perez Tobar
 # Curso: M6A
 # Dinamica de Sistemas
- 
+# Clase 1: Función de Transferencia.
 ## 1. Introducción
 En la dinámica de sistemas, la función de transferencia es una herramienta matemática fundamental que describe el comportamiento de un sistema lineal e invariante en el tiempo (LTI)
 en el dominio de Laplace. Esta función permite analizar cómo un sistema responde a una entrada dada, sin tener que resolver directamente las ecuaciones diferenciales que lo gobiernan.
@@ -11,7 +11,7 @@ La función de Transferencia es una herramienta que nos permite modelar un movim
 ejercicios, graficas y comportamientos segun el sistema lo reqiuiera.
 
 # 3. Definición
-🔑 Función de Transferencia: La función de transferencia también puede considerarse como la respuesta de un sistema inicialmente inerte a un impulso como señal de entrada: y la respuesta como función del tiempo se halla con la transformada de Laplace inversa de Y(s): Cualquier sistema físico (mecánico, eléctrico, etc.)
+🔑3.Función de Transferencia: La función de transferencia también puede considerarse como la respuesta de un sistema inicialmente inerte a un impulso como señal de entrada: y la respuesta como función del tiempo se halla con la transformada de Laplace inversa de Y(s): Cualquier sistema físico (mecánico, eléctrico, etc.)
 
 <div align="center">
 <img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/e75a5fb923dd89fb523c3e875b5307957f578b32/Build/Funcion%20de%20Transferencia.png?raw=true" width="300">
@@ -22,11 +22,11 @@ ejercicios, graficas y comportamientos segun el sistema lo reqiuiera.
  
 ### 3.1 Clasificacion de las Funciones de Transferencia
 
-3.11 Función impropia: Cunado el grado del Denominador es mas grande que el denominador.
+🔑3.11 Función impropia: Cunado el grado del Denominador es mas grande que el denominador.
 
-3.12 Funcion Bipropia: Cuando el grado del Numerador y El Denominador es igual.
+🔑3.12 Funcion Bipropia: Cuando el grado del Numerador y El Denominador es igual.
 
-3.13 Funcion estrictamente propia: Cunado el grado del Numerador es mas grande que el Denominador.
+🔑3.13 Funcion estrictamente propia: Cunado el grado del Numerador es mas grande que el Denominador.
 
 ## 4. Ejemplos
 Clasificar las siguientes funciones segun el orden
@@ -45,7 +45,7 @@ $$\frac{s - 1}{s + 1} \hspace{1.6cm} \textit{bipropia}$$
 Son los valores de S que todos los valores de transferencia obtienen los valores de "S" que cumplen la condicion.
 
 
-# Ejemplo
+# 💡 4.2 Ejemplo
 
 ### Hallar los ceros de una función de transferencia
 
@@ -53,7 +53,7 @@ $$\frac{s^2 + 4s + 1}{s^4 + 3s^3 + 3s^2 + s + 2}$$
 
 ### Paso 1: Igualar el numerador a cero
 
-$$s^2 + 4s + 1 = 0$$
+$${s^2 + 4s + 1 = 0}$$
 
 Aplicamos la fórmula general:
 
@@ -90,7 +90,7 @@ $$\[G(s) = \frac{Y(s)}{U(s)} = \frac{s^2 + 4s + 1}{s^4 + 3s^3 + 3s^2 + s + 2}\]$
 
 El denominador:
 
-$$s^4 + 3s^3 + 3s^2 + s + 2\$$
+$$\(s^4 + 3s^3 + 3s^2 + s + 2\)$$
 
 Factorizamos o aplicamos algún método de raíces:
 
@@ -144,7 +144,7 @@ Se dibujan los polos y ceros en el plano con ejes reales e imaginarios:
 <img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/f74095e5992c02b969b6be09056f1e95572bf907/Build/grafica%20de%20matlab.png" width="300">
 </div>
 
-## 4.2 Polos de una funcion de trasnferencia 
+## 4.3 Polos de una funcion de trasnferencia 
 
 • Si se iguala D(s) a 0 se obtienen los valores de “s” que cumplen con la condición
 
@@ -153,7 +153,7 @@ Se dibujan los polos y ceros en el plano con ejes reales e imaginarios:
   
 • Estos valores pueden ser reales o complejos por lo tanto se pueden ubicar en un plano cartesiano
 
-Ejemplo
+## 4.3 💡 Ejemplo
 Hallar la funcion de trasnferencia de la siguiente funcion. 
 
 $$G(s) = \frac{Y(s)}{U(s)} = \frac{3s - 1}{s^2 + 3s + 2} = \frac{N(s)}{D(s)}$$
@@ -162,7 +162,7 @@ $$D(s) = s^2 + 3s + 2 = (s + 1)(s + 2)$$
 
 $$\text{Polos: } s = -1, \quad s = -2$$
 
-## 5. Ubicacion grafica de polos
+## 5. Ubicación grafica de polos
 
 <div align="center">
 <img src= "https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/9783cc3e060592a3bf6fd53879ac5e7ef574a4dd/Build/grafica%20de%20polos.png" widht=300">
@@ -174,7 +174,7 @@ $$\text{Polos: } s = -1, \quad s = -2$$
 <img src= "https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/493cc6be7d2dd5c7c1efb7404a4afaf6af327c1a/Build/Grafica%20de%20polos%20y%20zeros%20de%20una%20funcion%20de%20transferencia%20.png" widht=300">
 </div>
 
-## Grado de la funcion de Transferencia
+## Grado de la función de Transferencia
 
  • Otra forma de clasificar las funciones de transferencia es  por su orden o grado
  
@@ -184,15 +184,11 @@ $$\text{Polos: } s = -1, \quad s = -2$$
 
 La función de transferencia está dada por:
 
-$$
-G(s) = \frac{3s - 1}{s^2 + 3s + 2}
-$$
+$$G(s) = \frac{3s - 1}{s^2 + 3s + 2}$$
 
 Donde el **polinomio característico** de segundo orden es:
 
-$$
-D(s) = s^2 + 3s + 2
-$$
+$$D(s) = s^2 + 3s + 2$$
 
 La funcion de Transferencia es de segundo orden, debido a que es de grado 2.
 
@@ -210,15 +206,11 @@ $$\lim_{t \to \infty} f(t) = \lim_{s \to 0} sF(s)$$
 
 La función de transferencia del sistema es:
 
-$$
-G(s) = \frac{Y(s)}{U(s)} = \frac{4}{5s + 1}
-$$
+$$G(s) = \frac{Y(s)}{U(s)} = \frac{4}{5s + 1}$$
 
 Multiplicando por \( U(s) \):
 
-$$
-Y(s) = \frac{4}{5s + 1} \cdot U(s)
-$$
+$$Y(s) = \frac{4}{5s + 1} \cdot U(s)$$
 
 ---
 
@@ -267,9 +259,9 @@ $$\lim_{s \to 0} \frac{4}{5s + 1} = \frac{4}{1} = 4$$
 | Segundo Orden Sobreamortiguado         | $$( \frac{\omega_n^2}{s^2 + 2\zeta\omega_n s + \omega_n^2} \)$$      | Igual que arriba con \( \zeta > 1 \)                                | Dos exponentes reales negativos        |
 | Segundo Orden No Amortiguado           | $$( \frac{\omega_n^2}{s^2 + \omega_n^2} \)$$                          | $$( \frac{d^2y(t)}{dt^2} + \omega_n^2 y(t) = \omega_n^2 u(t) \)$$    | Oscilación sostenida                   |
 
-## 8. Ejercicios 
+## 📚 8. Ejercicios 
 
-## Ejercicio 8.1
+##  📚 Ejercicio 8.1
  
 La función de transferencia está dada por:
 
@@ -302,8 +294,8 @@ $$G(s) = \frac{s + 3}{s^3 + 11s^2 + 12s + 18}$$
 
 - **Cero**: $s = -3$  
 - **Polos**: raíces de $s^3 + 11s^2 + 12s + 18$
-- 
-  ## Ejercicio 8.2
+  
+## 📚 Ejercicio 8.3
 
 {Función de Transferencia:}
 
@@ -336,12 +328,14 @@ $$s = \frac{-5 \pm \sqrt{-15}}{2} = \frac{-5}{2} \pm \frac{j\sqrt{15}}{2}$$
 $$s= \frac{-5}{2} \pm \frac{j\sqrt{15}}{2}$$
 
 ## 9. Conclusiones
+
 9.1 Aprendimos que la funcion de Transferencia es una funcion matematica que describe como un sistema dinamico responde de una entrada a una salida .
 Es importante analizar el sistema ya que nos permite ver como el sistema se comporta, bajo diferentes condiciones
 
 9.2 Los polos y ceros de una función de transferencia determinan de forma directa el comportamiento dinámico de un sistema. Los ceros influyen en la forma de la respuesta del sistema, mientras que los polos definen su estabilidad y velocidad de respuesta. Estos va ser importante, ya que la ubicación de los polos va definir si el sistema si es estable, inestable o marginamente inestable.
 
 ## 10. Bibliografia 
+
 Cote, J. (s.f.). Función de Transferencia [Diapositivas de clase]. Escuela de Tecnología Electrónica, ETITC.
 
 Kuo, B. C. (1996). Dinámica de sistemas físicos (3.ª ed.). Prentice Hall.
