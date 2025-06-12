@@ -277,8 +277,10 @@ grid on;
 
 Grafica de la respuesta del sistema
 <div align="center">
-<img src="">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/3ba657f124ae053440b1d027373cd74652c92f80/img/respuesta%20del%20sistema.jpg">
 </div>
+
+Diagrama de Bloques Simulink
 
 
 ## 10. Conclusiones
