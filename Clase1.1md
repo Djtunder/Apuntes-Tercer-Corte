@@ -66,6 +66,11 @@ $$m \cdot \frac{d^2x(t)}{dt^2} + b \cdot \frac{dx(t)}{dt} + k \cdot x(t) = F(t)$
 
 $$L \cdot \frac{d^2q(t)}{dt^2} + R \cdot \frac{dq(t)}{dt} + \frac{1}{C} \cdot q(t) = V(t)$$
 
-### 6. Figuras
+## 6. Figuras
+<div align="center">
+  <img src="" width="400"/>
+</div>
+
+
 
 
