@@ -295,7 +295,7 @@ disp(['Función de transferencia T(s) = ', num2str(T)]);
 Grafico del diagrama de señal 
 
 <div align="center">
-<img src="">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/22e552e74cb17ea28e7c31e63bfec9673df06aeb/img/diagramas%20de%20flujo%20de%20se%C3%B1al%20.jpg">
 </div>
 
 
