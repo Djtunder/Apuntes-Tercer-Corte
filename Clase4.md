@@ -10,7 +10,7 @@ En esta clase vimos la representacion de los diagramas de señal, que se utiliza
 Los diagramas de flujo de señales permiten representar de forma clara sistemas complejos y facilitan el cálculo de la función de transferencia total. La fórmula de Mason es una herramienta clave en este tipo de análisis, ya que permite resolver sistemas con estructuras complicadas de manera más sencilla.
 
 ## 3. Definiciones
-3.1 Nodo: Representan las señales de entrada o salida del Sistema.Se representa por medio de un círculo con una etiqueta que indique el nombre de la señal.
+3.1 🔑 Nodo: Representan las señales de entrada o salida del Sistema.Se representa por medio de un círculo con una etiqueta que indique el nombre de la señal.
 
 <div align="center">
 <img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/75f830ff974a1ed7a184f5cf5310053ee5d706ee/img/nodos%2011.jpg">
@@ -31,7 +31,7 @@ transferencia que relaciona la entrada y la salida.
 </div>
 Figura 3.2 "imagen de Flechas".
 
-3.3 Camino o trayectoria: Camino o trayecto es un recorrido de ramas conectadas en el sentido de las flechas de las ramas.
+3.3 🔑 Camino o trayectoria: Camino o trayecto es un recorrido de ramas conectadas en el sentido de las flechas de las ramas.
 
 • Si no se cruza ningún nodo más de una vez, el camino o trayecto es abierto.
 
@@ -43,11 +43,11 @@ Figura 3.2 "imagen de Flechas".
 <img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/7dffd7b0752cf8d16bde70399e434d7c9a1be4aa/img/tabla%20de%20interpretacion%20de%20diagramas%20de%20se%C3%B1al..jpg" width="300">
 </div>
 
-3.4 Ganancia de lazo: La ganancia de lazo es el producto de las ganancias de ramas de lazo.
+3.4 🔑Ganancia de lazo: La ganancia de lazo es el producto de las ganancias de ramas de lazo.
 
-3.5 Trayecto o cmaino directo: Trayecto directo es el camino  o trayecto de un nodo de entrada a un nodo de salida, sin cruzar ningún nodo más de una vez. 
+3.5 🔑 Trayecto o cmaino directo: Trayecto directo es el camino  o trayecto de un nodo de entrada a un nodo de salida, sin cruzar ningún nodo más de una vez. 
 
-3.6 Lazo: Un lazo es un trayecto o camino cerrado.
+3.6 🔑 Lazo: Un lazo es un trayecto o camino cerrado.
 
 ## 4. Formula de Mason
 
@@ -86,13 +86,13 @@ Funcion de Transferencia
 
 $$\[\frac{C(s)}{R(s)} = \frac{P_1 \Delta_1}{\Delta} = \frac{G_1 G_2 G_3}{1 - G_1 G_2 H_1 + G_2 G_3 H_2 + G_1 G_2 G_3}\]$$
 
-Ejemplo 4.2
+💡 Ejemplo 4.2
 
 <div align="center">
 <img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/e52af1b8b4e6e29ad89dd75fa03f0bf00b2b9a19/img/ejemplo%202.jpg" width="300">
 </div>
 
-## Ejemplo - Diagrama de Flujo con Método de Mason
+## 💡 Ejemplo - Diagrama de Flujo con Método de Mason
 
 ### Ganancias de Trayectoria Directa
 
@@ -143,7 +143,9 @@ $$\[\frac{C(s)}{R(s)} = \frac{G_1 G_2 G_3 G_4 G_5 + G_1 G_6 G_4 G_5 + G_1 G_2 G_
 | **Retroalimentación** | Flecha que regresa a un nodo  | Representa un lazo de realimentación.                                          |
 
 
-## 7. Ecuaciones## 📘 Fórmula de Mason para Diagramas de Flujo de Señal
+## 7. Ecuaciones
+
+## 📘 Fórmula de Mason para Diagramas de Flujo de Señal
 
 Sea la función de transferencia de un sistema representado por un diagrama de flujo de señal:
 
@@ -169,9 +171,8 @@ $$\[\Delta = 1 - \sum (\text{lazos individuales}) + \sum (\text{productos de dos
 4. Calcular \( \Delta_k \) para cada trayectoria.
 5. Sustituir los valores en la fórmula de Mason.
 
----
 
-### 📌 Ejemplo básico:
+# 💡 Ejemplo básico:
 
 Supongamos:
 - Una trayectoria directa: \( P_1 = G_1 G_2 \)
@@ -185,17 +186,17 @@ $$\[\Delta_1 = 1 \quad \text{(ya que el lazo toca la trayectoria directa)}\]$$
 
 $$\[T = \frac{P_1 \Delta_1}{\Delta} = \frac{G_1 G_2}{1 + H G_2}\]$$
 
-## 8. Ejercicios
+## 📚 8. Ejercicios
 
 Obtener la funcion de transferencia, utilizando la formula de mazon del siguiente ejemplo.
 <div aqlign="center">+
 <img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/c8eb7c1cc1183b623f43494cb552ee2d798c02cd/img/ejercicio%203.jpg" width="300">
 </div>
-### Trayectoria directa
+# Trayectoria directa
 
 $$\[P_1 = G_1 G_2 G_3\]$$
 
-### Lazos cerrados
+## Lazos cerrados
 
 $$\[L_1 = -G_1 G_2 H_1\]$$
 
@@ -219,7 +220,7 @@ $$\[\frac{C(s)}{R(s)} = \frac{P_1 \Delta_1}{\Delta}\]$$
 
 $$\[\frac{C(s)}{R(s)} = \frac{G_1 G_2 G_3}{1 + G_1 G_2 H_1 + G_2 G_3 H_2 + G_1 G_2 G_3}\]$$
 
-Ejercicio 5.2
+## 📚 Ejercicio 8.2
 Obtener la funcion de trasnferecnia de la siguuiente figura usando formula de mazon
 
 <div align="center">
@@ -228,64 +229,75 @@ Obtener la funcion de trasnferecnia de la siguuiente figura usando formula de ma
 
 Solucion
 
-### Trayectorias directas
+## ✅ Trayectoria directa
 
-\[P_1 = G_1 G_2 G_3 G_4 G_5\]
+$$P_1 = G_1 \cdot G_2 \cdot G_3 \cdot G_4 \cdot G_5$$
 
+### 🔁 Lazos individuales
 
-### Lazos individuales
+$$L_1 = -G_1 \cdot G_2 \cdot H_1$$
 
-\[L_1 = -G_1 G_2 H_1\]
+$$L_2 = -G_3 \cdot G_4 \cdot H_3$$
 
-\[L_2 = -G_3 G_4 H_3\]
+$$L_3 = H_2$$
 
-\[L_3 = H_2\]
-
----
-
-### Productos de lazos no tocantes
+ Productos de lazos no tocantes
 
 No hay lazos no tocantes entre sí.
 
----
+### 🧮 Determinante
 
-### Determinante
+$$\Delta = 1 - (L_1 + L_2 + L_3)$$
 
-\[\Delta = 1 - (L_1 + L_2 + L_3)\]
+$$\Delta = 1 + G_1 \cdot G_2 \cdot H_1 + G_3 \cdot G_4 \cdot H_3 - H_2$$
 
-\[\Delta = 1 + G_1 G_2 H_1 + G_3 G_4 H_3 - H_2\]
+### 📌 Cofactores
 
-### Cofactores
+$$\Delta_1 = 1$$
 
-Todos los lazos tocan la trayectoria directa, por tanto:
+### 🔧 Función de transferencia
 
-\[\Delta_1 = 1\]
+## 9. Codigo de Matlab 
+Diagrama de flujo de señal - Fórmula de Mason
 
-### Función de transferencia
+% Bloques directos
+G1 = 2;
+G2 = 3;
+G3 = 4;
 
-\[\frac{Y(s)}{R(s)} = \frac{P_1 \Delta_1}{\Delta}\]
+% Retroalimentaciones
+H1 = 0.5;
+H2 = 0.2;
 
-\[\frac{Y(s)}{R(s)} = \frac{G_1 G_2 G_3 G_4 G_5}{1 + G_1 G_2 H_1 + G_3 G_4 H_3 - H_2}\]
+% Trayectoria directa
+P1 = G1 * G2 * G3;
 
-## 9. Codigo
+% Lazos individuales
+L1 = -G2 * H1;      % Lazo entre G2 y G1
+L2 = -G3 * H2;      % Lazo entre G3 y G2
 
-💡Ejemplo 4:
+% Determinante del sistema (Delta)
+Delta = 1 - (L1 + L2);
 
-% Aplicación de la fórmula de Mason en un sistema sencillo
-% Trayectoria directa: P1 = G1 * G2
-% Lazo: L1 = -H * G2
+% Cofactor de la trayectoria directa (todos los lazos tocan)
+Delta1 = 1;
 
-G1 = 2;     % Ganancia del bloque 1
-G2 = 3;     % Ganancia del bloque 2
-H  = 0.5;   % Ganancia de retroalimentación
+% Función de transferencia
+T = (P1 * Delta1) / Delta;
 
-P1 = G1 * G2;           % Ganancia de la trayectoria directa
-L1 = -H * G2;           % Ganancia del lazo
-Delta = 1 - L1;         % Determinante del sistema
+disp('--- Fórmula de Mason ---');
+disp(['P1 = ', num2str(P1)]);
+disp(['L1 = ', num2str(L1)]);
+disp(['L2 = ', num2str(L2)]);
+disp(['Delta = ', num2str(Delta)]);
+disp(['Función de transferencia T(s) = ', num2str(T)]);
 
-T = P1 / Delta;         % Fórmula de Mason
+Grafico del diagrama de señal 
 
-disp(['La función de transferencia es: T = ', num2str(T)]);
+<div align="center">
+<img src="">
+</div>
+
 
 # 10. Conclusiones
 1. Aprendimos que los diagramas de flujo de señal permiten representar gráficamente las relaciones funcionales entre las variables de un sistema dinámico.
