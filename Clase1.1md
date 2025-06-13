@@ -67,8 +67,9 @@ $$m \cdot \frac{d^2x(t)}{dt^2} + b \cdot \frac{dx(t)}{dt} + k \cdot x(t) = F(t)$
 $$L \cdot \frac{d^2q(t)}{dt^2} + R \cdot \frac{dq(t)}{dt} + \frac{1}{C} \cdot q(t) = V(t)$$
 
 ## 6. Figuras
+
 <div align="center">
-  <img src="" width="400"/>
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/cd6053bfee21ec716fd542126612517e54bd406b/img/sistema%20masa-resorte.jpg" width="300">
 </div>
 
 
